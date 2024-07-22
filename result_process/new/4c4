@@ -1,0 +1,706 @@
+ethereum-1        | INFO [07-15|08:33:22.610] Submitted transaction                    fullhash=0x0b29da34059592e5ec82347ec000bf10553cd81a38482fa60f19e7cccc77a3cf recipient=0xd590f0c82d1DAfeabEf43D4c793C1Ac1A4e070B2
+ethereum-1        | INFO [07-15|08:33:24.000] Successfully sealed new block            number=913 sealhash="e42b8e…0d25bc" hash="5636c0…661eb8" elapsed=4.995s
+ethereum-1        | INFO [07-15|08:33:24.000] 🔗 block reached canonical chain          number=906 hash="2b49b3…7a002c"
+ethereum-1        | INFO [07-15|08:33:24.000] 🔨 mined potential block                  number=913 hash="5636c0…661eb8"
+ethereum-1        | INFO [07-15|08:33:24.001] Commit new mining work                   number=914 sealhash="5871bb…dfe237" uncles=0 txs=0 gas=0       fees=0            elapsed="354.633µs"
+ethereum-2        | INFO [07-15|08:33:24.001] Successfully sealed new block            number=913 sealhash="c1c90c…3b68a7" hash="ea6202…0490cc" elapsed=4.998s
+ethereum-2        | INFO [07-15|08:33:24.002] 🔗 block reached canonical chain          number=906 hash="da4a18…3d73c3"
+ethereum-2        | INFO [07-15|08:33:24.002] 🔨 mined potential block                  number=913 hash="ea6202…0490cc"
+ethereum-2        | INFO [07-15|08:33:24.002] Commit new mining work                   number=914 sealhash="ba23ad…d264e0" uncles=0 txs=0 gas=0       fees=0            elapsed="348.133µs"
+ethereum-3        | INFO [07-15|08:33:24.001] Successfully sealed new block            number=913 sealhash="7923d5…b43676" hash="56d714…d5a73e" elapsed=4.997s
+ethereum-3        | INFO [07-15|08:33:24.001] 🔗 block reached canonical chain          number=906 hash="528883…a4e9b6"
+ethereum-3        | INFO [07-15|08:33:24.001] 🔨 mined potential block                  number=913 hash="56d714…d5a73e"
+ethereum-3        | INFO [07-15|08:33:24.002] Commit new mining work                   number=914 sealhash="e6fd87…6a6db9" uncles=0 txs=0 gas=0       fees=0            elapsed="334.582µs"
+ethereum-1        | INFO [07-15|08:33:24.013] Commit new mining work                   number=914 sealhash="74a1b2…81387b" uncles=0 txs=1 gas=303589  fees=3.03589e-13  elapsed=12.314ms
+ethereum-3        | INFO [07-15|08:33:29.000] Successfully sealed new block            number=914 sealhash="e6fd87…6a6db9" hash="dd535c…07a7e5" elapsed=4.998s
+ethereum-3        | INFO [07-15|08:33:29.000] 🔗 block reached canonical chain          number=907 hash="c3f808…00b800"
+ethereum-3        | INFO [07-15|08:33:29.000] 🔨 mined potential block                  number=914 hash="dd535c…07a7e5"
+ethereum-3        | INFO [07-15|08:33:29.001] Commit new mining work                   number=915 sealhash="58bba2…32aff2" uncles=0 txs=0 gas=0       fees=0            elapsed="589.516µs"
+ethereum-2        | INFO [07-15|08:33:29.000] Successfully sealed new block            number=914 sealhash="ba23ad…d264e0" hash="a77b0e…0ef723" elapsed=4.997s
+ethereum-2        | INFO [07-15|08:33:29.000] 🔗 block reached canonical chain          number=907 hash="03613f…b259f4"
+ethereum-2        | INFO [07-15|08:33:29.000] 🔨 mined potential block                  number=914 hash="a77b0e…0ef723"
+ethereum-2        | INFO [07-15|08:33:29.001] Commit new mining work                   number=915 sealhash="c63cf1…fa9170" uncles=0 txs=0 gas=0       fees=0            elapsed="329.992µs"
+ethereum-1        | INFO [07-15|08:33:29.000] Successfully sealed new block            number=914 sealhash="74a1b2…81387b" hash="e537b8…8df23f" elapsed=4.987s
+ethereum-1        | INFO [07-15|08:33:29.001] 🔗 block reached canonical chain          number=907 hash="9d3f59…c9d0ec"
+ethereum-1        | INFO [07-15|08:33:29.001] Commit new mining work                   number=915 sealhash="2e857a…c6d3f1" uncles=0 txs=0 gas=0       fees=0            elapsed="880.073µs"
+ethereum-1        | INFO [07-15|08:33:29.002] 🔨 mined potential block                  number=914 hash="e537b8…8df23f"
+pier-ethereum1    | time="2024-07-15T08:33:29.033" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" index=49 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:33:29.036" level=info msg="Receive ibtp from :appchain:ethappchain1" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" index=49 module=exchanger type=INTERCHAIN
+bitxhub_solo      | time="2024-07-15T08:33:29.448" level=info msg="======== Call execute, height=245" module=order
+bitxhub_solo      | time="2024-07-15T08:33:29.450" level=info msg="Generated block" count=1 height=245 module=app
+bitxhub_solo      | time="2024-07-15T08:33:29.452" level=info msg="verify proof elapsed" count=1 fields.time=2.697613ms module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:29.455" level=info msg="Apply transactions elapsed" count=1 fields.time=2.154874ms module=executor
+bitxhub_solo      | time="2024-07-15T08:33:29.463" level=info msg="Persisted block" count=1 elapse=7.180853ms hash=0x8e228CC96F364a0399884356073C959069D4A18BEDcdfffC288C27952D43b532 height=245 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:29.463" level=info msg="classify block" count=1 elapse="20.516µs" height=245 module=router
+bitxhub_solo      | time="2024-07-15T08:33:29.463" level=info msg="end send block to pier" count=1 elapse="525.07µs" height=245 module=router
+bitxhub_solo      | time="2024-07-15T08:33:29.464" level=info msg="Executed and Persisted block" count=1 elapse=14.114122ms height=245 module=executor
+pier-ethereum1    | time="2024-07-15T08:33:29.464" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="47.109µs" height=245 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:33:29.464" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="24.183µs" height=245 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:33:29.465" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" height=245 index=49 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:29.465" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" module=bxh_adapter type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:29.466" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="858.703µs" height=245 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:29.473" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:33:29.474" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" elapse=7.877205ms index=49 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:29.474" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" current index=49 elapse="22.722µs" index=49 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:29.474" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" elapse="114.976µs" index=49 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:29.474" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" index=49 module=exchanger timestamp=1721032409474511089 type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:29.474" level=info msg="start submit ibtp" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" module=appchain_adapter typ=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:33:29.551" level=info msg="[2.1] bxh Adapter send tx" elapse=515.204899ms index=49 module=bxh_adapter type=INTERCHAIN
+ethereum-2        | INFO [07-15|08:33:29.590] Submitted transaction                    fullhash=0xec5801aebe674ccb577cccbefec93d31c149387a3bd0fe0ea073682b23bb7043 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+ethereum-2        | INFO [07-15|08:33:32.006] Commit new mining work                   number=915 sealhash="eb7a49…0f03db" uncles=0 txs=1 gas=567695  fees=5.67695e-13  elapsed=5.825ms
+ethereum-3        | INFO [07-15|08:33:34.001] Successfully sealed new block            number=915 sealhash="58bba2…32aff2" hash="4f6d4b…9b2f39" elapsed=4.999s
+ethereum-1        | INFO [07-15|08:33:34.001] Successfully sealed new block            number=915 sealhash="2e857a…c6d3f1" hash="97539e…5c22fc" elapsed=5.000s
+ethereum-1        | INFO [07-15|08:33:34.001] 🔗 block reached canonical chain          number=908 hash="1172a0…2afcc6"
+ethereum-1        | INFO [07-15|08:33:34.002] 🔨 mined potential block                  number=915 hash="97539e…5c22fc"
+ethereum-2        | INFO [07-15|08:33:34.001] Successfully sealed new block            number=915 sealhash="eb7a49…0f03db" hash="e13e00…070b4a" elapsed=1.995s
+ethereum-2        | INFO [07-15|08:33:34.001] 🔗 block reached canonical chain          number=908 hash="ddae00…30a78b"
+ethereum-2        | INFO [07-15|08:33:34.002] 🔨 mined potential block                  number=915 hash="e13e00…070b4a"
+ethereum-1        | INFO [07-15|08:33:34.002] Commit new mining work                   number=916 sealhash="cbc578…d7e5d3" uncles=0 txs=0 gas=0       fees=0            elapsed="980.281µs"
+ethereum-3        | INFO [07-15|08:33:34.001] 🔗 block reached canonical chain          number=908 hash="4531d2…b5af2b"
+pier-ethereum2    | time="2024-07-15T08:33:34.003" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=0 typ=INTERCHAIN
+ethereum-3        | INFO [07-15|08:33:34.003] Commit new mining work                   number=916 sealhash="ad3571…f023c4" uncles=0 txs=0 gas=0       fees=0            elapsed=1.766ms
+ethereum-2        | INFO [07-15|08:33:34.002] Commit new mining work                   number=916 sealhash="c67cc0…f601d6" uncles=0 txs=0 gas=0       fees=0            elapsed="356.867µs"
+ethereum-3        | INFO [07-15|08:33:34.003] 🔨 mined potential block                  number=915 hash="4f6d4b…9b2f39"
+pier-ethereum2    | time="2024-07-15T08:33:34.003" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:34.004" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" index=49 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:34.004" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" index=49 module=exchanger type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:33:34.106" level=warning msg="Receive transaction [account: 0x4768E44fB5e85E1D86D403D767cC5898703B2e78, nonce: 97, hash: 0x19391f0A0AFBF0EC7652B42a4AC0f1e893C671047371Bcc5df94C06B34586b9e], but mempool had already existed other tx[hash:0xa06B48cdfc4e490aAef9D38ecd54BA54BB6FD7ce537Ff2923b8849E1A91854f4]" module=order
+bitxhub_solo      | time="2024-07-15T08:33:34.406" level=info msg="======== Call execute, height=246" module=order
+bitxhub_solo      | time="2024-07-15T08:33:34.406" level=info msg="Generated block" count=1 height=246 module=app
+bitxhub_solo      | time="2024-07-15T08:33:34.407" level=info msg="verify proof elapsed" count=1 fields.time="159.602µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:34.407" level=info msg="Apply transactions elapsed" count=1 fields.time="359.297µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:33:34.408" level=info msg="Persisted block" count=1 elapse="510.848µs" hash=0xfF5112eA327B3bf137ba533D2710692fDc8d93FFBCd51193609D1f2119Fb4BC0 height=246 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:34.408" level=info msg="Executed and Persisted block" count=1 elapse=1.468012ms height=246 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:34.408" level=info msg="classify block" count=1 elapse="8.462µs" height=246 module=router
+bitxhub_solo      | time="2024-07-15T08:33:34.408" level=info msg="end send block to pier" count=1 elapse="69.055µs" height=246 module=router
+pier-ethereum2    | time="2024-07-15T08:33:34.408" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.727µs" height=246 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:33:34.408" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" height=246 index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:34.409" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=bxh_adapter type=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:33:34.408" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.555µs" height=246 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:33:34.409" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="228.501µs" height=246 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:34.410" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum3    | time="2024-07-15T08:33:34.411" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse=1.897499ms index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:34.411" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" current index=13 elapse="17.627µs" index=13 key="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:34.411" level=info msg="[3.2] end insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse="83.052µs" index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:34.411" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=1721032414411436216 type=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:33:34.411" level=info msg="start submit ibtp" ibtp="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=appchain_adapter typ=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:34.506" level=info msg="[2.1] bxh Adapter send tx" elapse=503.145934ms index=13 module=bxh_adapter type=INTERCHAIN
+ethereum-3        | INFO [07-15|08:33:34.531] Submitted transaction                    fullhash=0x850a6dfc92f7c4cea394831e7c03d7799333a123e1ce566f57eba00cb12a50d8 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | 2024-07-15T08:33:34.594Z [DEBUG] plugin.sh: 2024-07-15T08:33:34.593Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0xec5801aebe674ccb577cccbefec93d31c149387a3bd0fe0ea073682b23bb7043
+pier-ethereum2    | time="2024-07-15T08:33:34.595" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+ethereum-3        | INFO [07-15|08:33:37.006] Commit new mining work                   number=916 sealhash="653d75…c3a8cc" uncles=0 txs=1 gas=537916  fees=5.37916e-13  elapsed=5.405ms
+ethereum-2        | INFO [07-15|08:33:39.000] Successfully sealed new block            number=916 sealhash="c67cc0…f601d6" hash="98b44e…c1448d" elapsed=4.997s
+ethereum-2        | INFO [07-15|08:33:39.000] 🔗 block reached canonical chain          number=909 hash="806231…77d2d5"
+ethereum-2        | INFO [07-15|08:33:39.000] 🔨 mined potential block                  number=916 hash="98b44e…c1448d"
+ethereum-2        | INFO [07-15|08:33:39.001] Commit new mining work                   number=917 sealhash="e7227a…773d8e" uncles=0 txs=0 gas=0       fees=0            elapsed="308.606µs"
+ethereum-3        | INFO [07-15|08:33:39.000] Successfully sealed new block            number=916 sealhash="653d75…c3a8cc" hash="66d4a8…6e7be8" elapsed=1.993s
+ethereum-3        | INFO [07-15|08:33:39.000] 🔗 block reached canonical chain          number=909 hash="41939f…dd4fe9"
+ethereum-3        | INFO [07-15|08:33:39.000] 🔨 mined potential block                  number=916 hash="66d4a8…6e7be8"
+ethereum-1        | INFO [07-15|08:33:39.000] Successfully sealed new block            number=916 sealhash="cbc578…d7e5d3" hash="89bd9e…a1c651" elapsed=4.998s
+ethereum-1        | INFO [07-15|08:33:39.000] 🔗 block reached canonical chain          number=909 hash="60ab31…f6f6da"
+ethereum-1        | INFO [07-15|08:33:39.000] 🔨 mined potential block                  number=916 hash="89bd9e…a1c651"
+ethereum-1        | INFO [07-15|08:33:39.001] Commit new mining work                   number=917 sealhash="c1ffd0…b7d088" uncles=0 txs=0 gas=0       fees=0            elapsed="321.487µs"
+pier-ethereum3    | time="2024-07-15T08:33:39.002" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:33:39.002" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:33:39.002" level=info msg="Receive ibtp from :appchain:ethappchain3" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:33:39.002" level=info msg="Receive ibtp from :appchain:ethappchain3" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger type=INTERCHAIN
+ethereum-3        | INFO [07-15|08:33:39.008] Commit new mining work                   number=917 sealhash="95ca6f…8a8edb" uncles=0 txs=0 gas=0       fees=0            elapsed=6.739ms
+bitxhub_solo      | time="2024-07-15T08:33:39.104" level=warning msg="Receive transaction [account: 0xddbAbD3197DCcAF871C7D7FDd87aC7DC292f46A5, nonce: 48, hash: 0x26e387A238543579AB4ac0003427BaB87607AED36E3aA664752Fec7cdB4f29b3], but mempool had already existed other tx[hash:0x5B40A6C2Ae7ae5398F9E17Fe571d894c586995b6CAc679Ca270b89455eEb1431]" module=order
+bitxhub_solo      | time="2024-07-15T08:33:39.404" level=info msg="======== Call execute, height=247" module=order
+bitxhub_solo      | time="2024-07-15T08:33:39.404" level=info msg="Generated block" count=1 height=247 module=app
+bitxhub_solo      | time="2024-07-15T08:33:39.405" level=info msg="verify proof elapsed" count=1 fields.time="155.243µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:39.412" level=info msg="record invoke service" chainServiceID="ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:33:39.412" level=info msg="Apply transactions elapsed" count=1 fields.time=7.805474ms module=executor
+bitxhub_solo      | time="2024-07-15T08:33:39.413" level=info msg="Persisted block" count=1 elapse="483.156µs" hash=0x48698c4cF48BB6C00a3f28f8eA413b7C963AA860D3Ef3d42F1d24e161Dbe1fee height=247 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:39.413" level=info msg="Executed and Persisted block" count=1 elapse=8.884653ms height=247 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:39.413" level=info msg="classify block" count=1 elapse="12.001µs" height=247 module=router
+bitxhub_solo      | time="2024-07-15T08:33:39.413" level=info msg="end send block to pier" count=1 elapse="113.569µs" height=247 module=router
+pier-ethereum1    | time="2024-07-15T08:33:39.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.498µs" height=247 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:33:39.414" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" height=247 index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:39.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.371µs" height=247 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:33:39.414" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:39.414" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="150.181µs" height=247 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:39.416" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:33:39.416" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse=2.170232ms index=13 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:39.416" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" current index=13 elapse="8.491µs" index=13 key="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:39.417" level=info msg="[3.2] end insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse="273.359µs" index=13 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:39.417" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=1721032419417396849 type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:39.417" level=info msg="start submit receipt" ibtp="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-2        | INFO [07-15|08:33:39.441] Submitted transaction                    fullhash=0xddae30298e487ff30e9b0573a237222a9101291b0557275e9f0d024bd55e0c50 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum3    | time="2024-07-15T08:33:39.504" level=info msg="[2.1] bxh Adapter send tx" elapse=502.317548ms index=13 module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum3    | 2024-07-15T08:33:39.542Z [DEBUG] plugin.sh: 2024-07-15T08:33:39.542Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0x850a6dfc92f7c4cea394831e7c03d7799333a123e1ce566f57eba00cb12a50d8
+pier-ethereum3    | time="2024-07-15T08:33:39.543" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+pier-ethereum2    | time="2024-07-15T08:33:40.011" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0x19391f0A0AFBF0EC7652B42a4AC0f1e893C671047371Bcc5df94C06B34586b9e%!(EXTRA string=not found in DB)" module=bxh_adapter
+ethereum-2        | INFO [07-15|08:33:42.001] Commit new mining work                   number=917 sealhash="abd035…273510" uncles=0 txs=1 gas=58206   fees=5.8206e-14   elapsed=1.044ms
+bitxhub_solo      | time="2024-07-15T08:33:42.415" level=info msg="======== Call execute, height=248" module=order
+bitxhub_solo      | time="2024-07-15T08:33:42.415" level=info msg="Generated block" count=1 height=248 module=app
+bitxhub_solo      | time="2024-07-15T08:33:42.415" level=info msg="verify proof elapsed" count=1 fields.time="152.765µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:42.416" level=info msg="record invoke service" chainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:33:42.416" level=info msg="Apply transactions elapsed" count=1 fields.time="755.925µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:33:42.417" level=info msg="Persisted block" count=1 elapse="342.89µs" hash=0x75bb29ffe705F7B8D17AA29149de540d0c56767aF0E2711358c3437b65daB22a height=248 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:42.417" level=info msg="Executed and Persisted block" count=1 elapse=1.755545ms height=248 module=executor
+pier-ethereum3    | time="2024-07-15T08:33:42.417" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.629µs" height=248 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:33:42.417" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" height=248 index=49 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:33:42.418" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:42.417" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.527µs" height=248 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:42.417" level=info msg="classify block" count=1 elapse="15.606µs" height=248 module=router
+bitxhub_solo      | time="2024-07-15T08:33:42.417" level=info msg="end send block to pier" count=1 elapse="119.955µs" height=248 module=router
+pier-ethereum1    | time="2024-07-15T08:33:42.418" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="158.073µs" height=248 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:33:42.426" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" elapse=8.003017ms index=49 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:33:42.426" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" current index=49 elapse="7.214µs" index=49 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:33:42.426" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" elapse="84.604µs" index=49 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:33:42.426" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" index=49 module=exchanger timestamp=1721032422426408706 type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:33:42.426" level=info msg="start submit receipt" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-49" module=appchain_adapter typ=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:33:42.425" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+ethereum-1        | INFO [07-15|08:33:42.454] Submitted transaction                    fullhash=0x24eddda9f713145a6cf296a226427961dd05f5c10f922d05b51213bf154a338d recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | time="2024-07-15T08:33:42.516" level=info msg="[2.1] bxh Adapter send tx" elapse=8.512286004s index=49 module=bxh_adapter type=RECEIPT_SUCCESS
+ethereum-3        | INFO [07-15|08:33:44.000] Successfully sealed new block            number=917 sealhash="95ca6f…8a8edb" hash="137df8…ef1708" elapsed=4.992s
+ethereum-2        | INFO [07-15|08:33:44.001] Successfully sealed new block            number=917 sealhash="abd035…273510" hash="95cdb1…af98bc" elapsed=2.000s
+ethereum-2        | INFO [07-15|08:33:44.002] 🔗 block reached canonical chain          number=910 hash="98fa78…108922"
+ethereum-2        | INFO [07-15|08:33:44.002] 🔨 mined potential block                  number=917 hash="95cdb1…af98bc"
+ethereum-3        | INFO [07-15|08:33:44.000] 🔗 block reached canonical chain          number=910 hash="d71290…cb00e2"
+ethereum-3        | INFO [07-15|08:33:44.001] 🔨 mined potential block                  number=917 hash="137df8…ef1708"
+ethereum-3        | INFO [07-15|08:33:44.001] Commit new mining work                   number=918 sealhash="c4792a…cf9b69" uncles=0 txs=0 gas=0       fees=0            elapsed="348.998µs"
+ethereum-1        | INFO [07-15|08:33:44.000] Successfully sealed new block            number=917 sealhash="c1ffd0…b7d088" hash="094a51…a22715" elapsed=4.999s
+ethereum-1        | INFO [07-15|08:33:44.000] 🔗 block reached canonical chain          number=910 hash="616c34…d80942"
+ethereum-1        | INFO [07-15|08:33:44.000] 🔨 mined potential block                  number=917 hash="094a51…a22715"
+ethereum-1        | INFO [07-15|08:33:44.001] Commit new mining work                   number=918 sealhash="556fde…53192c" uncles=0 txs=0 gas=0       fees=0            elapsed="352.344µs"
+ethereum-1        | INFO [07-15|08:33:44.002] Commit new mining work                   number=918 sealhash="30c027…eaa1db" uncles=0 txs=1 gas=60174   fees=6.0174e-14   elapsed=1.498ms
+ethereum-2        | INFO [07-15|08:33:44.002] Commit new mining work                   number=918 sealhash="76053f…44264b" uncles=0 txs=0 gas=0       fees=0            elapsed="345.297µs"
+pier-ethereum2    | time="2024-07-15T08:33:44.447" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+pier-ethereum3    | time="2024-07-15T08:33:45.009" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0x26e387A238543579AB4ac0003427BaB87607AED36E3aA664752Fec7cdB4f29b3%!(EXTRA string=not found in DB)" module=bxh_adapter
+bitxhub_solo      | time="2024-07-15T08:33:47.413" level=info msg="======== Call execute, height=249" module=order
+bitxhub_solo      | time="2024-07-15T08:33:47.413" level=info msg="Generated block" count=1 height=249 module=app
+bitxhub_solo      | time="2024-07-15T08:33:47.413" level=info msg="verify proof elapsed" count=1 fields.time="155.087µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:47.413" level=info msg="Apply transactions elapsed" count=1 fields.time="292.84µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:33:47.420" level=info msg="Persisted block" count=1 elapse=6.596304ms hash=0x68AA70a651F3E0e7C27Ef0505D6842F7650A219674aEA19Ddd3F7B7928b2417D height=249 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:47.420" level=info msg="Executed and Persisted block" count=1 elapse=7.470706ms height=249 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:47.420" level=info msg="classify block" count=1 elapse="14.213µs" height=249 module=router
+bitxhub_solo      | time="2024-07-15T08:33:47.420" level=info msg="end send block to pier" count=1 elapse="103.984µs" height=249 module=router
+pier-ethereum3    | time="2024-07-15T08:33:47.421" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.147µs" height=249 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:33:47.421" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" height=249 index=13 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:47.421" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=bxh_adapter type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:47.421" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="164.505µs" height=249 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:33:47.421" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.977µs" height=249 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:47.423" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:33:47.423" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse=2.043623ms index=13 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:47.423" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" current index=13 elapse="9.692µs" index=13 key="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:47.423" level=info msg="[3.2] end insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse="119.398µs" index=13 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:47.423" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=1721032427423732011 type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:47.423" level=info msg="start submit ibtp" ibtp="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=appchain_adapter typ=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:33:47.513" level=info msg="[2.1] bxh Adapter send tx" elapse=8.510854598s index=13 module=bxh_adapter type=INTERCHAIN
+ethereum-2        | INFO [07-15|08:33:47.531] Submitted transaction                    fullhash=0xd290a0006f3f538ce712a15ddad25f5c5b24e6ea9e520d0fafea6efbe9c8dcc5 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+ethereum-1        | INFO [07-15|08:33:49.006] Successfully sealed new block            number=918 sealhash="30c027…eaa1db" hash="7b5f0a…336fc3" elapsed=5.004s
+ethereum-3        | INFO [07-15|08:33:49.006] Successfully sealed new block            number=918 sealhash="c4792a…cf9b69" hash="4ba4e7…0fbbd0" elapsed=5.005s
+ethereum-2        | INFO [07-15|08:33:49.006] Successfully sealed new block            number=918 sealhash="76053f…44264b" hash="174bdd…c44728" elapsed=5.004s
+ethereum-2        | INFO [07-15|08:33:49.007] 🔗 block reached canonical chain          number=911 hash="3e0d94…288755"
+ethereum-2        | INFO [07-15|08:33:49.008] 🔨 mined potential block                  number=918 hash="174bdd…c44728"
+ethereum-3        | INFO [07-15|08:33:49.007] 🔗 block reached canonical chain          number=911 hash="f18cee…608945"
+ethereum-3        | INFO [07-15|08:33:49.007] 🔨 mined potential block                  number=918 hash="4ba4e7…0fbbd0"
+ethereum-3        | INFO [07-15|08:33:49.007] Commit new mining work                   number=919 sealhash="f55871…e24371" uncles=0 txs=0 gas=0       fees=0            elapsed="649.8µs"
+ethereum-1        | INFO [07-15|08:33:49.007] 🔗 block reached canonical chain          number=911 hash="940e18…ddaa57"
+ethereum-1        | INFO [07-15|08:33:49.008] 🔨 mined potential block                  number=918 hash="7b5f0a…336fc3"
+ethereum-1        | INFO [07-15|08:33:49.008] Commit new mining work                   number=919 sealhash="812c84…22045a" uncles=0 txs=0 gas=0       fees=0            elapsed="927.623µs"
+ethereum-2        | INFO [07-15|08:33:49.008] Commit new mining work                   number=919 sealhash="ec91c3…e1e228" uncles=0 txs=0 gas=0       fees=0            elapsed=1.196ms
+ethereum-2        | INFO [07-15|08:33:49.012] Commit new mining work                   number=919 sealhash="fc7b7c…da0626" uncles=0 txs=1 gas=510695  fees=5.10695e-13  elapsed=5.845ms
+pier-ethereum1    | time="2024-07-15T08:33:49.463" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+ethereum-3        | INFO [07-15|08:33:54.000] Successfully sealed new block            number=919 sealhash="f55871…e24371" hash="37b0dd…ffab90" elapsed=4.992s
+ethereum-3        | INFO [07-15|08:33:54.000] 🔗 block reached canonical chain          number=912 hash="b00a50…563cb3"
+ethereum-3        | INFO [07-15|08:33:54.000] 🔨 mined potential block                  number=919 hash="37b0dd…ffab90"
+ethereum-3        | INFO [07-15|08:33:54.000] Commit new mining work                   number=920 sealhash="1befbd…0e94c6" uncles=0 txs=0 gas=0       fees=0            elapsed="332.307µs"
+ethereum-1        | INFO [07-15|08:33:54.001] 🔗 block reached canonical chain          number=912 hash="4eb46e…a45d67"
+ethereum-2        | INFO [07-15|08:33:54.000] Successfully sealed new block            number=919 sealhash="fc7b7c…da0626" hash="d03a2b…964bb9" elapsed=4.987s
+ethereum-2        | INFO [07-15|08:33:54.000] 🔗 block reached canonical chain          number=912 hash="c8e20c…86e4f7"
+ethereum-2        | INFO [07-15|08:33:54.001] 🔨 mined potential block                  number=919 hash="d03a2b…964bb9"
+ethereum-1        | INFO [07-15|08:33:54.001] Commit new mining work                   number=920 sealhash="c1cd80…0be9f1" uncles=0 txs=0 gas=0       fees=0            elapsed="621.169µs"
+ethereum-1        | INFO [07-15|08:33:54.000] Successfully sealed new block            number=919 sealhash="812c84…22045a" hash="5d809f…30832c" elapsed=4.992s
+ethereum-1        | INFO [07-15|08:33:54.001] 🔨 mined potential block                  number=919 hash="5d809f…30832c"
+ethereum-2        | INFO [07-15|08:33:54.001] Commit new mining work                   number=920 sealhash="a64c2b…09c666" uncles=0 txs=0 gas=0       fees=0            elapsed="354.311µs"
+ethereum-2        | INFO [07-15|08:33:54.001] Commit new mining work                   number=920 sealhash="a64c2b…09c666" uncles=0 txs=0 gas=0       fees=0            elapsed="781.635µs"
+pier-ethereum2    | time="2024-07-15T08:33:54.004" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:54.004" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:54.004" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:54.004" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger type=INTERCHAIN
+bitxhub_solo      | time="2024-07-15T08:33:54.107" level=warning msg="Receive transaction [account: 0x4768E44fB5e85E1D86D403D767cC5898703B2e78, nonce: 99, hash: 0x2EA0513e33aCb9972B8ab7E6012607fD5a43210A38b96c4B813e5cf5C90BC6eB], but mempool had already existed other tx[hash:0x711dC3f19c65547fc277834122b0Aa44DF3b37b06DFE35C529Ec845B1627FFAC]" module=order
+bitxhub_solo      | time="2024-07-15T08:33:54.408" level=info msg="======== Call execute, height=250" module=order
+bitxhub_solo      | time="2024-07-15T08:33:54.408" level=info msg="Generated block" count=1 height=250 module=app
+bitxhub_solo      | time="2024-07-15T08:33:54.409" level=info msg="verify proof elapsed" count=1 fields.time=1.572135ms module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:54.410" level=info msg="Apply transactions elapsed" count=1 fields.time="716.766µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:33:54.412" level=info msg="Persisted block" count=1 elapse=1.906079ms hash=0xE127508953E69f0d26fa223E557aC5Ae8162586B02bF70aae4D2d96D827EDE23 height=250 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:54.412" level=info msg="Executed and Persisted block" count=1 elapse=4.617091ms height=250 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:54.413" level=info msg="Report checkpoint" hash=0xE127508953E69f0d26fa223E557aC5Ae8162586B02bF70aae4D2d96D827EDE23 height=250 module=order
+bitxhub_solo      | time="2024-07-15T08:33:54.413" level=info msg="classify block" count=1 elapse="10.752µs" height=250 module=router
+bitxhub_solo      | time="2024-07-15T08:33:54.414" level=info msg="end send block to pier" count=1 elapse=1.346817ms height=250 module=router
+pier-ethereum2    | time="2024-07-15T08:33:54.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="13.053µs" height=250 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:33:54.414" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" height=250 index=14 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:54.415" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=bxh_adapter type=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:33:54.415" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="569.073µs" height=250 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:33:54.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.814µs" height=250 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:54.416" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum3    | time="2024-07-15T08:33:54.417" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse=1.904626ms index=14 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:54.417" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" current index=14 elapse="12.11µs" index=14 key="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:54.417" level=info msg="[3.2] end insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse="90.537µs" index=14 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:33:54.417" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=1721032434417481688 type=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:33:54.417" level=info msg="start submit ibtp" ibtp="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=appchain_adapter typ=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:33:54.508" level=info msg="[2.1] bxh Adapter send tx" elapse=503.242222ms index=14 module=bxh_adapter type=INTERCHAIN
+ethereum-3        | INFO [07-15|08:33:54.508] Submitted transaction                    fullhash=0xa620c48a49b06c5cc9d84671b94f715972337ab833862fcae891d4feb0c35513 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | 2024-07-15T08:33:54.536Z [DEBUG] plugin.sh: 2024-07-15T08:33:54.536Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0xd290a0006f3f538ce712a15ddad25f5c5b24e6ea9e520d0fafea6efbe9c8dcc5
+pier-ethereum2    | time="2024-07-15T08:33:54.537" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+ethereum-3        | INFO [07-15|08:33:57.004] Commit new mining work                   number=920 sealhash="84661b…d5843b" uncles=0 txs=1 gas=498594  fees=4.98594e-13  elapsed=4.269ms
+ethereum-2        | INFO [07-15|08:33:59.000] Successfully sealed new block            number=920 sealhash="a64c2b…09c666" hash="424526…09d707" elapsed=4.999s
+ethereum-1        | INFO [07-15|08:33:59.000] Successfully sealed new block            number=920 sealhash="c1cd80…0be9f1" hash="eee0e5…8fb5b7" elapsed=4.999s
+ethereum-2        | INFO [07-15|08:33:59.000] 🔗 block reached canonical chain          number=913 hash="ea6202…0490cc"
+ethereum-2        | INFO [07-15|08:33:59.001] 🔨 mined potential block                  number=920 hash="424526…09d707"
+ethereum-2        | INFO [07-15|08:33:59.001] Commit new mining work                   number=921 sealhash="57e612…d51272" uncles=0 txs=0 gas=0       fees=0            elapsed="625.64µs"
+ethereum-1        | INFO [07-15|08:33:59.000] 🔗 block reached canonical chain          number=913 hash="5636c0…661eb8"
+ethereum-1        | INFO [07-15|08:33:59.000] 🔨 mined potential block                  number=920 hash="eee0e5…8fb5b7"
+ethereum-1        | INFO [07-15|08:33:59.001] Commit new mining work                   number=921 sealhash="52e8a6…ab4787" uncles=0 txs=0 gas=0       fees=0            elapsed="533.001µs"
+ethereum-3        | INFO [07-15|08:33:59.006] Successfully sealed new block            number=920 sealhash="84661b…d5843b" hash="4c587e…4ececa" elapsed=2.001s
+ethereum-3        | INFO [07-15|08:33:59.006] 🔗 block reached canonical chain          number=913 hash="56d714…d5a73e"
+ethereum-3        | INFO [07-15|08:33:59.006] 🔨 mined potential block                  number=920 hash="4c587e…4ececa"
+ethereum-3        | INFO [07-15|08:33:59.007] Commit new mining work                   number=921 sealhash="318071…7b99f7" uncles=0 txs=0 gas=0       fees=0            elapsed="354.053µs"
+pier-ethereum3    | time="2024-07-15T08:33:59.007" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:33:59.008" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:33:59.008" level=info msg="Receive ibtp from :appchain:ethappchain3" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:33:59.008" level=info msg="Receive ibtp from :appchain:ethappchain3" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger type=INTERCHAIN
+bitxhub_solo      | time="2024-07-15T08:33:59.110" level=warning msg="Receive transaction [account: 0xddbAbD3197DCcAF871C7D7FDd87aC7DC292f46A5, nonce: 50, hash: 0x3796cFE315253d30eB323A7c6e1Cb84996FF6fEcf57d0511003C4Fb379b3B29F], but mempool had already existed other tx[hash:0x56ECb94cb310eD1a1703bC746d839815B82b9dA97e5fC3F8aEC74698516ead8A]" module=order
+bitxhub_solo      | time="2024-07-15T08:33:59.411" level=info msg="======== Call execute, height=251" module=order
+bitxhub_solo      | time="2024-07-15T08:33:59.411" level=info msg="Generated block" count=1 height=251 module=app
+bitxhub_solo      | time="2024-07-15T08:33:59.411" level=info msg="verify proof elapsed" count=1 fields.time="175.584µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:33:59.412" level=info msg="record invoke service" chainServiceID="ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:33:59.412" level=info msg="Apply transactions elapsed" count=1 fields.time=1.136133ms module=executor
+bitxhub_solo      | time="2024-07-15T08:33:59.413" level=info msg="Persisted block" count=1 elapse="286.738µs" hash=0x067AcFFd5CB888cA71Dcfc5c49d7EDcbA7Fb77e2988c0fB9b7bAd6EF48436502 height=251 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:59.413" level=info msg="Executed and Persisted block" count=1 elapse=2.026726ms height=251 module=executor
+bitxhub_solo      | time="2024-07-15T08:33:59.413" level=info msg="classify block" count=1 elapse="7.869µs" height=251 module=router
+bitxhub_solo      | time="2024-07-15T08:33:59.413" level=info msg="end send block to pier" count=1 elapse="115.175µs" height=251 module=router
+pier-ethereum1    | time="2024-07-15T08:33:59.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.451µs" height=251 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:33:59.414" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" height=251 index=14 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:59.414" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:33:59.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="1.915µs" height=251 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:33:59.414" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="175.347µs" height=251 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:33:59.415" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:33:59.416" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse=1.747976ms index=14 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:59.416" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" current index=14 elapse="11.892µs" index=14 key="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:59.416" level=info msg="[3.2] end insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse="93.962µs" index=14 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:33:59.416" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=1721032439416298418 type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:33:59.416" level=info msg="start submit receipt" ibtp="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-2        | INFO [07-15|08:33:59.441] Submitted transaction                    fullhash=0x7508d675d6f9998dd001a21ba17b5a0a043c7010e50fc9f65e0ae364322f7129 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum3    | 2024-07-15T08:33:59.511Z [DEBUG] plugin.sh: 2024-07-15T08:33:59.511Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0xa620c48a49b06c5cc9d84671b94f715972337ab833862fcae891d4feb0c35513
+pier-ethereum3    | time="2024-07-15T08:33:59.511" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+pier-ethereum3    | time="2024-07-15T08:33:59.511" level=info msg="[2.1] bxh Adapter send tx" elapse=503.210049ms index=14 module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:00.012" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0x2EA0513e33aCb9972B8ab7E6012607fD5a43210A38b96c4B813e5cf5C90BC6eB%!(EXTRA string=not found in DB)" module=bxh_adapter
+ethereum-2        | INFO [07-15|08:34:02.002] Commit new mining work                   number=921 sealhash="2a7ae8…b29d6e" uncles=0 txs=1 gas=54247   fees=5.4247e-14   elapsed=1.205ms
+bitxhub_solo      | time="2024-07-15T08:34:02.425" level=info msg="======== Call execute, height=252" module=order
+bitxhub_solo      | time="2024-07-15T08:34:02.425" level=info msg="Generated block" count=1 height=252 module=app
+bitxhub_solo      | time="2024-07-15T08:34:02.425" level=info msg="verify proof elapsed" count=1 fields.time="154.655µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:02.431" level=info msg="record invoke service" chainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:34:02.432" level=info msg="Apply transactions elapsed" count=1 fields.time="808.336µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:02.433" level=info msg="Persisted block" count=1 elapse="414.323µs" hash=0xBc50Ae620F27e9cbe5DCFE381Ea22bD487009Af1b30806Ca6551A4eFE4763d35 height=252 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:02.433" level=info msg="Executed and Persisted block" count=1 elapse=7.939439ms height=252 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:02.433" level=info msg="classify block" count=1 elapse="12.642µs" height=252 module=router
+bitxhub_solo      | time="2024-07-15T08:34:02.433" level=info msg="end send block to pier" count=1 elapse="100.687µs" height=252 module=router
+pier-ethereum2    | time="2024-07-15T08:34:02.433" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.713µs" height=252 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:02.433" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.988µs" height=252 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:02.433" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" height=252 index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:02.434" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:34:02.434" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="667.616µs" height=252 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:02.436" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum3    | time="2024-07-15T08:34:02.436" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse=2.396517ms index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:02.436" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" current index=13 elapse="7.285µs" index=13 key="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:02.437" level=info msg="[3.2] end insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" elapse="72.265µs" index=13 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:02.437" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" index=13 module=exchanger timestamp=1721032442437076657 type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:34:02.437" level=info msg="start submit receipt" ibtp="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-13" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-3        | INFO [07-15|08:34:02.462] Submitted transaction                    fullhash=0x838e7346a81530433a81bd17219494a932ac0b62c12f18e3bac14bf7a4bfb9a1 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | time="2024-07-15T08:34:02.519" level=info msg="[2.1] bxh Adapter send tx" elapse=8.514551901s index=13 module=bxh_adapter type=RECEIPT_SUCCESS
+ethereum-1        | INFO [07-15|08:34:04.000] Successfully sealed new block            number=921 sealhash="52e8a6…ab4787" hash="32d62c…a3edf1" elapsed=4.999s
+ethereum-1        | INFO [07-15|08:34:04.000] 🔗 block reached canonical chain          number=914 hash="e537b8…8df23f"
+ethereum-1        | INFO [07-15|08:34:04.000] 🔨 mined potential block                  number=921 hash="32d62c…a3edf1"
+ethereum-1        | INFO [07-15|08:34:04.000] Commit new mining work                   number=922 sealhash="0e9c33…284d87" uncles=0 txs=0 gas=0       fees=0            elapsed="339.236µs"
+ethereum-3        | INFO [07-15|08:34:04.000] Successfully sealed new block            number=921 sealhash="318071…7b99f7" hash="6d0374…517f52" elapsed=4.993s
+ethereum-3        | INFO [07-15|08:34:04.000] 🔗 block reached canonical chain          number=914 hash="dd535c…07a7e5"
+ethereum-2        | INFO [07-15|08:34:04.000] Successfully sealed new block            number=921 sealhash="2a7ae8…b29d6e" hash="7a9f8c…b944d5" elapsed=1.998s
+ethereum-2        | INFO [07-15|08:34:04.000] 🔗 block reached canonical chain          number=914 hash="a77b0e…0ef723"
+ethereum-2        | INFO [07-15|08:34:04.000] 🔨 mined potential block                  number=921 hash="7a9f8c…b944d5"
+ethereum-3        | INFO [07-15|08:34:04.001] 🔨 mined potential block                  number=921 hash="6d0374…517f52"
+ethereum-3        | INFO [07-15|08:34:04.001] Commit new mining work                   number=922 sealhash="644f20…4dcc85" uncles=0 txs=0 gas=0       fees=0            elapsed="941.106µs"
+ethereum-2        | INFO [07-15|08:34:04.001] Commit new mining work                   number=922 sealhash="b0069c…1af848" uncles=0 txs=0 gas=0       fees=0            elapsed="318.081µs"
+ethereum-3        | INFO [07-15|08:34:04.002] Commit new mining work                   number=922 sealhash="e2e1ae…1d8b00" uncles=0 txs=1 gas=56215   fees=5.6215e-14   elapsed=2.033ms
+pier-ethereum2    | time="2024-07-15T08:34:04.445" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+pier-ethereum3    | time="2024-07-15T08:34:05.016" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0x3796cFE315253d30eB323A7c6e1Cb84996FF6fEcf57d0511003C4Fb379b3B29F%!(EXTRA string=not found in DB)" module=bxh_adapter
+bitxhub_solo      | time="2024-07-15T08:34:07.419" level=info msg="======== Call execute, height=253" module=order
+bitxhub_solo      | time="2024-07-15T08:34:07.419" level=info msg="Generated block" count=1 height=253 module=app
+bitxhub_solo      | time="2024-07-15T08:34:07.419" level=info msg="verify proof elapsed" count=1 fields.time="121.041µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:07.419" level=info msg="Apply transactions elapsed" count=1 fields.time="314.191µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:07.420" level=info msg="Persisted block" count=1 elapse="466.047µs" hash=0x29B5E0b49ee6eC6DFF3d2Dad086f9F9D8983f58441cDfA151be1576F5e414bf0 height=253 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:07.420" level=info msg="Executed and Persisted block" count=1 elapse=1.328592ms height=253 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:07.420" level=info msg="classify block" count=1 elapse="8.496µs" height=253 module=router
+bitxhub_solo      | time="2024-07-15T08:34:07.420" level=info msg="end send block to pier" count=1 elapse="131.204µs" height=253 module=router
+pier-ethereum1    | time="2024-07-15T08:34:07.421" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.697µs" height=253 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:07.421" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="13.348µs" height=253 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:34:07.421" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" height=253 index=14 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:07.421" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=bxh_adapter type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:07.421" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="284.413µs" height=253 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:07.429" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:34:07.430" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse=8.257799ms index=14 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:07.430" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" current index=14 elapse="7.753µs" index=14 key="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:07.430" level=info msg="[3.2] end insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse="85.306µs" index=14 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:07.430" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=1721032447430422422 type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:07.430" level=info msg="start submit ibtp" ibtp="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=appchain_adapter typ=INTERCHAIN
+ethereum-2        | INFO [07-15|08:34:07.508] Submitted transaction                    fullhash=0x547428e21b2f46f7cddabdca81592c2ade72de7a8595303158327de2e750fa1c recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum3    | time="2024-07-15T08:34:07.519" level=info msg="[2.1] bxh Adapter send tx" elapse=8.511245403s index=14 module=bxh_adapter type=INTERCHAIN
+ethereum-3        | INFO [07-15|08:34:09.000] Successfully sealed new block            number=922 sealhash="e2e1ae…1d8b00" hash="6c0e61…50c48c" elapsed=4.998s
+ethereum-3        | INFO [07-15|08:34:09.001] 🔗 block reached canonical chain          number=915 hash="4f6d4b…9b2f39"
+ethereum-3        | INFO [07-15|08:34:09.001] Commit new mining work                   number=923 sealhash="f53995…d8d615" uncles=0 txs=0 gas=0       fees=0            elapsed="700.824µs"
+ethereum-3        | INFO [07-15|08:34:09.001] 🔨 mined potential block                  number=922 hash="6c0e61…50c48c"
+ethereum-1        | INFO [07-15|08:34:09.000] Successfully sealed new block            number=922 sealhash="0e9c33…284d87" hash="cc8aa5…f380f8" elapsed=4.999s
+ethereum-1        | INFO [07-15|08:34:09.000] 🔗 block reached canonical chain          number=915 hash="97539e…5c22fc"
+ethereum-1        | INFO [07-15|08:34:09.000] 🔨 mined potential block                  number=922 hash="cc8aa5…f380f8"
+ethereum-1        | INFO [07-15|08:34:09.001] Commit new mining work                   number=923 sealhash="24cf85…bb1cd7" uncles=0 txs=0 gas=0       fees=0            elapsed="633.375µs"
+ethereum-2        | INFO [07-15|08:34:09.000] Successfully sealed new block            number=922 sealhash="b0069c…1af848" hash="cd63ea…a70342" elapsed=4.999s
+ethereum-2        | INFO [07-15|08:34:09.000] 🔗 block reached canonical chain          number=915 hash="e13e00…070b4a"
+ethereum-2        | INFO [07-15|08:34:09.001] Commit new mining work                   number=923 sealhash="74b7e8…13f55b" uncles=0 txs=0 gas=0       fees=0            elapsed="658.535µs"
+ethereum-2        | INFO [07-15|08:34:09.002] 🔨 mined potential block                  number=922 hash="cd63ea…a70342"
+ethereum-2        | INFO [07-15|08:34:09.005] Commit new mining work                   number=923 sealhash="487843…d24807" uncles=0 txs=1 gas=498606  fees=4.98606e-13  elapsed=4.331ms
+pier-ethereum3    | time="2024-07-15T08:34:09.467" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+ethereum-2        | INFO [07-15|08:34:14.000] Successfully sealed new block            number=923 sealhash="487843…d24807" hash="9d84b8…008b4b" elapsed=4.995s
+ethereum-2        | INFO [07-15|08:34:14.001] 🔗 block reached canonical chain          number=916 hash="98b44e…c1448d"
+ethereum-2        | INFO [07-15|08:34:14.001] 🔨 mined potential block                  number=923 hash="9d84b8…008b4b"
+ethereum-3        | INFO [07-15|08:34:14.000] Successfully sealed new block            number=923 sealhash="f53995…d8d615" hash="b38dac…8063bc" elapsed=4.999s
+ethereum-3        | INFO [07-15|08:34:14.000] 🔗 block reached canonical chain          number=916 hash="66d4a8…6e7be8"
+ethereum-1        | INFO [07-15|08:34:14.000] Successfully sealed new block            number=923 sealhash="24cf85…bb1cd7" hash="22dd86…22c6ed" elapsed=4.999s
+ethereum-1        | INFO [07-15|08:34:14.000] 🔗 block reached canonical chain          number=916 hash="89bd9e…a1c651"
+ethereum-1        | INFO [07-15|08:34:14.000] 🔨 mined potential block                  number=923 hash="22dd86…22c6ed"
+ethereum-1        | INFO [07-15|08:34:14.001] Commit new mining work                   number=924 sealhash="ab97b0…b2f743" uncles=0 txs=0 gas=0       fees=0            elapsed="827.644µs"
+ethereum-3        | INFO [07-15|08:34:14.001] 🔨 mined potential block                  number=923 hash="b38dac…8063bc"
+ethereum-3        | INFO [07-15|08:34:14.001] Commit new mining work                   number=924 sealhash="825700…419ea3" uncles=0 txs=0 gas=0       fees=0            elapsed="305.294µs"
+pier-ethereum2    | time="2024-07-15T08:34:14.001" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" index=24 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:14.002" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" index=24 module=exchanger type=INTERCHAIN
+ethereum-2        | INFO [07-15|08:34:14.002] Commit new mining work                   number=924 sealhash="96dc3c…d1654e" uncles=0 txs=0 gas=0       fees=0            elapsed=1.098ms
+pier-ethereum2    | time="2024-07-15T08:34:14.003" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:14.003" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:34:14.103" level=warning msg="Receive transaction [account: 0x4768E44fB5e85E1D86D403D767cC5898703B2e78, nonce: 101, hash: 0xaaE8a6E9b36DF012f0D6047A6bD3904db6E3d26F4a9B1dC57085dAefb57e7346], but mempool had already existed other tx[hash:0x090477E818B4772B5F1EB8784E8382A7F4C61B7Ee4F09ae1eE3eC3e0d9716Aa1]" module=order
+bitxhub_solo      | time="2024-07-15T08:34:14.404" level=info msg="======== Call execute, height=254" module=order
+bitxhub_solo      | time="2024-07-15T08:34:14.404" level=info msg="Generated block" count=1 height=254 module=app
+bitxhub_solo      | time="2024-07-15T08:34:14.404" level=info msg="verify proof elapsed" count=1 fields.time="135.063µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:14.404" level=info msg="Apply transactions elapsed" count=1 fields.time="267.376µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:14.405" level=info msg="Persisted block" count=1 elapse="513.938µs" hash=0xF83654e4C9d6b1051E152798085c937deAb069AE19504f2B4d40F440574C5Ed4 height=254 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:14.405" level=info msg="Executed and Persisted block" count=1 elapse=1.325538ms height=254 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:14.405" level=info msg="classify block" count=1 elapse="14.3µs" height=254 module=router
+bitxhub_solo      | time="2024-07-15T08:34:14.405" level=info msg="end send block to pier" count=1 elapse="102.598µs" height=254 module=router
+pier-ethereum2    | time="2024-07-15T08:34:14.406" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="14.462µs" height=254 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:14.406" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" height=254 index=24 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:14.406" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" module=bxh_adapter type=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:14.406" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="160.818µs" height=254 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:14.406" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.181µs" height=254 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:14.407" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum1    | time="2024-07-15T08:34:14.408" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" elapse=1.856352ms index=24 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:14.408" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" current index=24 elapse="10.332µs" index=24 key="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:14.408" level=info msg="[3.2] end insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" elapse="77.171µs" index=24 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:14.408" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" index=24 module=exchanger timestamp=1721032454408418141 type=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:14.408" level=info msg="start submit ibtp" ibtp="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" module=appchain_adapter typ=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:14.505" level=info msg="[2.1] bxh Adapter send tx" elapse=502.984481ms index=24 module=bxh_adapter type=INTERCHAIN
+pier-ethereum2    | 2024-07-15T08:34:14.512Z [DEBUG] plugin.sh: 2024-07-15T08:34:14.512Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0x547428e21b2f46f7cddabdca81592c2ade72de7a8595303158327de2e750fa1c
+pier-ethereum2    | time="2024-07-15T08:34:14.512" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+ethereum-1        | INFO [07-15|08:34:14.579] Submitted transaction                    fullhash=0xe3e2273491289c56af5b0b82de84ace8769921064c33c3e4f98cdb472968297b recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+ethereum-1        | INFO [07-15|08:34:17.007] Commit new mining work                   number=924 sealhash="177a26…bdebca" uncles=0 txs=1 gas=890180  fees=8.9018e-13   elapsed=6.396ms
+ethereum-3        | INFO [07-15|08:34:19.000] Successfully sealed new block            number=924 sealhash="825700…419ea3" hash="46104f…d029f2" elapsed=4.999s
+ethereum-3        | INFO [07-15|08:34:19.000] 🔗 block reached canonical chain          number=917 hash="137df8…ef1708"
+ethereum-3        | INFO [07-15|08:34:19.000] 🔨 mined potential block                  number=924 hash="46104f…d029f2"
+ethereum-1        | INFO [07-15|08:34:19.001] Successfully sealed new block            number=924 sealhash="177a26…bdebca" hash="757b8c…a367a8" elapsed=1.993s
+ethereum-1        | INFO [07-15|08:34:19.001] 🔗 block reached canonical chain          number=917 hash="094a51…a22715"
+ethereum-1        | INFO [07-15|08:34:19.001] 🔨 mined potential block                  number=924 hash="757b8c…a367a8"
+ethereum-3        | INFO [07-15|08:34:19.001] Commit new mining work                   number=925 sealhash="85e12d…cf44d0" uncles=0 txs=0 gas=0       fees=0            elapsed="682.06µs"
+ethereum-1        | INFO [07-15|08:34:19.001] Commit new mining work                   number=925 sealhash="b739ef…7bea4e" uncles=0 txs=0 gas=0       fees=0            elapsed="664.297µs"
+ethereum-2        | INFO [07-15|08:34:19.000] Successfully sealed new block            number=924 sealhash="96dc3c…d1654e" hash="12334b…54ec44" elapsed=4.998s
+ethereum-2        | INFO [07-15|08:34:19.002] 🔗 block reached canonical chain          number=917 hash="95cdb1…af98bc"
+ethereum-2        | INFO [07-15|08:34:19.006] Commit new mining work                   number=925 sealhash="9a6bb9…92522f" uncles=0 txs=0 gas=0       fees=0            elapsed=4.974ms
+ethereum-2        | INFO [07-15|08:34:19.006] 🔨 mined potential block                  number=924 hash="12334b…54ec44"
+pier-ethereum1    | time="2024-07-15T08:34:19.007" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" index=50 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:19.007" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" index=17 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:19.008" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" index=51 module=exchanger timestamp=0 typ=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:19.007" level=info msg="Receive ibtp from :appchain:ethappchain1" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" index=50 module=exchanger type=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:19.008" level=info msg="Receive ibtp from :appchain:ethappchain1" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" index=17 module=exchanger type=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:19.009" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" index=24 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:19.009" level=info msg="Receive ibtp from :appchain:ethappchain1" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" index=24 module=exchanger type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:34:19.110" level=warning msg="Receive transaction [account: 0xD389be2C1e6cCC9fB33aDc2235af8b449e3d14B4, nonce: 96, hash: 0xC3865e5504Ca218705ed66ddff778c4eb4a734d2fDD326000481d79bdF01304A], but mempool had already existed other tx[hash:0xd445c8a90d175D9Cc0c05127828907922B36E69Ea4885bCcc2a4F428dd16a6B7]" module=order
+bitxhub_solo      | time="2024-07-15T08:34:19.110" level=warning msg="Receive transaction [account: 0xD389be2C1e6cCC9fB33aDc2235af8b449e3d14B4, nonce: 96, hash: 0xAE4C5Ddac46773e6A3C8a82425F3210A6d9d7DEb0a7606c4143912897E77B73a], but mempool had already existed other tx[hash:0xd445c8a90d175D9Cc0c05127828907922B36E69Ea4885bCcc2a4F428dd16a6B7]" module=order
+bitxhub_solo      | time="2024-07-15T08:34:19.410" level=info msg="======== Call execute, height=255" module=order
+bitxhub_solo      | time="2024-07-15T08:34:19.411" level=info msg="Generated block" count=1 height=255 module=app
+bitxhub_solo      | time="2024-07-15T08:34:19.411" level=info msg="verify proof elapsed" count=1 fields.time="156.846µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:19.411" level=info msg="Apply transactions elapsed" count=1 fields.time="274.425µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:19.412" level=info msg="Persisted block" count=1 elapse="337.072µs" hash=0x89dbe95eD3bA571bdAf7b843e804216714315758b476EadD7106B2779116ba38 height=255 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:19.412" level=info msg="Executed and Persisted block" count=1 elapse=1.203917ms height=255 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:19.412" level=info msg="classify block" count=1 elapse="12.938µs" height=255 module=router
+bitxhub_solo      | time="2024-07-15T08:34:19.412" level=info msg="end send block to pier" count=1 elapse="109.227µs" height=255 module=router
+pier-ethereum1    | time="2024-07-15T08:34:19.412" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.317µs" height=255 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:34:19.412" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" height=255 index=50 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.412" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" module=bxh_adapter type=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:34:19.413" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.416µs" height=255 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:34:19.413" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="707.53µs" height=255 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:19.414" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:34:19.415" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" elapse=1.75131ms index=50 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.415" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" current index=50 elapse="7.107µs" index=50 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.415" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" elapse="72.225µs" index=50 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.415" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" index=50 module=exchanger timestamp=1721032459415415482 type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:19.415" level=info msg="start submit ibtp" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" module=appchain_adapter typ=INTERCHAIN
+ethereum-2        | INFO [07-15|08:34:19.464] Submitted transaction                    fullhash=0xa83633d0b509b021c5b1c5a66673ec11065c2747646d3b4605195613184d43a5 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum1    | time="2024-07-15T08:34:19.511" level=info msg="[2.1] bxh Adapter send tx" elapse=503.52249ms index=50 module=bxh_adapter type=INTERCHAIN
+pier-ethereum1    | time="2024-07-15T08:34:19.512" level=info msg="Receive ibtp from :appchain:ethappchain1" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" index=51 module=exchanger type=INTERCHAIN
+pier-ethereum1    | 2024-07-15T08:34:19.584Z [DEBUG] plugin.sh: 2024-07-15T08:34:19.584Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0xe3e2273491289c56af5b0b82de84ace8769921064c33c3e4f98cdb472968297b
+pier-ethereum1    | time="2024-07-15T08:34:19.584" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+bitxhub_solo      | time="2024-07-15T08:34:19.711" level=info msg="======== Call execute, height=256" module=order
+bitxhub_solo      | time="2024-07-15T08:34:19.711" level=info msg="Generated block" count=1 height=256 module=app
+bitxhub_solo      | time="2024-07-15T08:34:19.711" level=info msg="verify proof elapsed" count=1 fields.time="153.12µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:19.711" level=info msg="Apply transactions elapsed" count=1 fields.time="287.09µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:19.712" level=info msg="Persisted block" count=1 elapse="506.843µs" hash=0xF8c20204586719177B1f22581a852BcBEdBCb54C0BCfebfE4A4da6D404d6fb15 height=256 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:19.712" level=info msg="Executed and Persisted block" count=1 elapse=1.406111ms height=256 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:19.712" level=info msg="classify block" count=1 elapse="8.26µs" height=256 module=router
+bitxhub_solo      | time="2024-07-15T08:34:19.713" level=info msg="end send block to pier" count=1 elapse="71.25µs" height=256 module=router
+pier-ethereum2    | time="2024-07-15T08:34:19.713" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" height=256 index=51 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.713" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" module=bxh_adapter type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:19.713" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="278.804µs" height=256 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:19.713" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.283µs" height=256 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:19.713" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.1µs" height=256 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:19.715" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:34:19.715" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" elapse=1.760398ms index=51 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.715" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" current index=51 elapse="9.279µs" index=51 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:19.715" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" elapse="113.003µs" index=51 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:20.008" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0xaaE8a6E9b36DF012f0D6047A6bD3904db6E3d26F4a9B1dC57085dAefb57e7346%!(EXTRA string=not found in DB)" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:20.014" level=info msg="[2.1] bxh Adapter send tx" elapse=502.442841ms index=51 module=bxh_adapter type=INTERCHAIN
+ethereum-2        | INFO [07-15|08:34:22.005] Commit new mining work                   number=925 sealhash="efee8f…408b85" uncles=0 txs=1 gas=294733  fees=2.94733e-13  elapsed=3.451ms
+bitxhub_solo      | time="2024-07-15T08:34:22.412" level=info msg="======== Call execute, height=257" module=order
+bitxhub_solo      | time="2024-07-15T08:34:22.412" level=info msg="Generated block" count=1 height=257 module=app
+bitxhub_solo      | time="2024-07-15T08:34:22.412" level=info msg="verify proof elapsed" count=1 fields.time="151.339µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:22.412" level=info msg="record invoke service" chainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:34:22.413" level=info msg="Apply transactions elapsed" count=1 fields.time="577.045µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:22.413" level=info msg="Persisted block" count=1 elapse="583.589µs" hash=0xdaF1992daCea2e19b5c369Ae75c08f9bE76D86d0d2dC1469FAAfEB1747443d5b height=257 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:22.414" level=info msg="Executed and Persisted block" count=1 elapse=1.766919ms height=257 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:22.414" level=info msg="classify block" count=1 elapse="12.009µs" height=257 module=router
+bitxhub_solo      | time="2024-07-15T08:34:22.414" level=info msg="end send block to pier" count=1 elapse="123.399µs" height=257 module=router
+pier-ethereum3    | time="2024-07-15T08:34:22.414" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" height=257 index=14 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:22.414" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:34:22.414" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="138.631µs" height=257 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:22.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.057µs" height=257 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:34:22.414" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.275µs" height=257 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:22.417" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum3    | time="2024-07-15T08:34:22.417" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse=2.822021ms index=14 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:22.417" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" current index=14 elapse="8.854µs" index=14 key="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:22.417" level=info msg="[3.2] end insert pool" ID="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" elapse="125.003µs" index=14 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:22.418" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" index=14 module=exchanger timestamp=1721032462418019270 type=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:34:22.418" level=info msg="start submit receipt" ibtp="1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-14" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-3        | INFO [07-15|08:34:22.438] Submitted transaction                    fullhash=0x26d9e96b87bb67a2284dc1bb3f6d55bf1862787389eedde0d28e6703f28b8af7 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | time="2024-07-15T08:34:22.512" level=info msg="[2.1] bxh Adapter send tx" elapse=8.509097265s index=14 module=bxh_adapter type=RECEIPT_SUCCESS
+ethereum-3        | INFO [07-15|08:34:24.000] Successfully sealed new block            number=925 sealhash="85e12d…cf44d0" hash="56221d…35d530" elapsed=4.999s
+ethereum-3        | INFO [07-15|08:34:24.000] 🔗 block reached canonical chain          number=918 hash="4ba4e7…0fbbd0"
+ethereum-3        | INFO [07-15|08:34:24.000] 🔨 mined potential block                  number=925 hash="56221d…35d530"
+ethereum-3        | INFO [07-15|08:34:24.000] Commit new mining work                   number=926 sealhash="d0ead9…4a1219" uncles=0 txs=0 gas=0       fees=0            elapsed="341.734µs"
+ethereum-1        | INFO [07-15|08:34:24.000] Successfully sealed new block            number=925 sealhash="b739ef…7bea4e" hash="8a3352…a30d3b" elapsed=4.998s
+ethereum-1        | INFO [07-15|08:34:24.000] 🔗 block reached canonical chain          number=918 hash="7b5f0a…336fc3"
+ethereum-1        | INFO [07-15|08:34:24.000] 🔨 mined potential block                  number=925 hash="8a3352…a30d3b"
+ethereum-1        | INFO [07-15|08:34:24.000] Commit new mining work                   number=926 sealhash="a4eb74…237a5a" uncles=0 txs=0 gas=0       fees=0            elapsed="347.676µs"
+ethereum-3        | INFO [07-15|08:34:24.001] Commit new mining work                   number=926 sealhash="825ae1…31df38" uncles=0 txs=1 gas=54235   fees=5.4235e-14   elapsed=1.383ms
+ethereum-2        | INFO [07-15|08:34:24.000] Successfully sealed new block            number=925 sealhash="efee8f…408b85" hash="4b8bff…d28d15" elapsed=1.995s
+ethereum-2        | INFO [07-15|08:34:24.000] 🔗 block reached canonical chain          number=918 hash="174bdd…c44728"
+ethereum-2        | INFO [07-15|08:34:24.000] 🔨 mined potential block                  number=925 hash="4b8bff…d28d15"
+ethereum-2        | INFO [07-15|08:34:24.001] Commit new mining work                   number=926 sealhash="d6172a…85904b" uncles=0 txs=0 gas=0       fees=0            elapsed="333.039µs"
+pier-ethereum2    | time="2024-07-15T08:34:24.002" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" index=50 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:24.002" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" index=50 module=exchanger type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:34:24.404" level=info msg="======== Call execute, height=258" module=order
+bitxhub_solo      | time="2024-07-15T08:34:24.404" level=info msg="Generated block" count=1 height=258 module=app
+bitxhub_solo      | time="2024-07-15T08:34:24.405" level=info msg="verify proof elapsed" count=1 fields.time="186.329µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:24.405" level=info msg="record invoke service" chainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:34:24.405" level=info msg="Apply transactions elapsed" count=1 fields.time="564.285µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:24.406" level=info msg="Persisted block" count=1 elapse="297.538µs" hash=0x9B82AD414B50D3160aE227fC77A4520b9B983680340Fb05AaE97530D8b34a0c2 height=258 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:24.406" level=info msg="Executed and Persisted block" count=1 elapse=1.495391ms height=258 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:24.406" level=info msg="classify block" count=1 elapse="9.822µs" height=258 module=router
+bitxhub_solo      | time="2024-07-15T08:34:24.406" level=info msg="end send block to pier" count=1 elapse="159.011µs" height=258 module=router
+pier-ethereum1    | time="2024-07-15T08:34:24.406" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" height=258 index=50 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:24.406" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:24.406" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="171.69µs" height=258 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:24.406" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="4.087µs" height=258 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:34:24.407" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.41µs" height=258 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:24.408" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum1    | time="2024-07-15T08:34:24.408" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" elapse=1.829634ms index=50 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:24.408" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" current index=50 elapse="7.835µs" index=50 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:24.409" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" elapse="328.446µs" index=50 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:24.409" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" index=50 module=exchanger timestamp=1721032464409298331 type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:24.409" level=info msg="start submit receipt" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-50" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-1        | INFO [07-15|08:34:24.432] Submitted transaction                    fullhash=0x3b6cb526a2dbb4f854387002b596057a0bc5a5911d73f1c1f55ac0c5159e1bf0 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | 2024-07-15T08:34:24.466Z [DEBUG] plugin.sh: 2024-07-15T08:34:24.466Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0xa83633d0b509b021c5b1c5a66673ec11065c2747646d3b4605195613184d43a5
+pier-ethereum2    | time="2024-07-15T08:34:24.466" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+pier-ethereum2    | time="2024-07-15T08:34:24.467" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" index=51 module=exchanger timestamp=1721032464467084919 type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:24.467" level=info msg="start submit ibtp" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" module=appchain_adapter typ=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:24.505" level=info msg="[2.1] bxh Adapter send tx" elapse=502.963042ms index=50 module=bxh_adapter type=RECEIPT_SUCCESS
+ethereum-2        | INFO [07-15|08:34:24.525] Submitted transaction                    fullhash=0xabd086d152ab224963f44bcc68f9943d93ff8c9031ee5b7ab00e6142ecf45fd0 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum1    | time="2024-07-15T08:34:25.015" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0xAE4C5Ddac46773e6A3C8a82425F3210A6d9d7DEb0a7606c4143912897E77B73a%!(EXTRA string=not found in DB)" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:25.015" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0xC3865e5504Ca218705ed66ddff778c4eb4a734d2fDD326000481d79bdF01304A%!(EXTRA string=not found in DB)" module=bxh_adapter
+ethereum-1        | INFO [07-15|08:34:27.001] Commit new mining work                   number=926 sealhash="764b5b…46dfa8" uncles=0 txs=1 gas=54235   fees=5.4235e-14   elapsed="965.421µs"
+ethereum-2        | INFO [07-15|08:34:27.003] Commit new mining work                   number=926 sealhash="dea7b5…ff1061" uncles=0 txs=1 gas=294745  fees=2.94745e-13  elapsed=2.581ms
+bitxhub_solo      | time="2024-07-15T08:34:27.119" level=warning msg="Receive transaction [account: 0xD389be2C1e6cCC9fB33aDc2235af8b449e3d14B4, nonce: 98, hash: 0x18271Da25f9035c51dC6Ef8fE52C43a97d4f68eA5712c1192ffC969f136b58B8], but mempool had already existed other tx[hash:0x33E8780878dE9f78d0E9edAc564B37544715527337b250e75f6ff8E01565a7BA]" module=order
+bitxhub_solo      | time="2024-07-15T08:34:27.419" level=info msg="======== Call execute, height=259" module=order
+bitxhub_solo      | time="2024-07-15T08:34:27.419" level=info msg="Generated block" count=1 height=259 module=app
+bitxhub_solo      | time="2024-07-15T08:34:27.420" level=info msg="verify proof elapsed" count=1 fields.time="165.538µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:27.420" level=info msg="Apply transactions elapsed" count=1 fields.time="287.504µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:27.421" level=info msg="Persisted block" count=1 elapse="714.113µs" hash=0xaaAeC550A9f36adfce4F43F0CcA2e614FC94Adf90950446Bea0098A22125D817 height=259 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:27.421" level=info msg="Executed and Persisted block" count=1 elapse=1.589813ms height=259 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:27.421" level=info msg="classify block" count=1 elapse="12.871µs" height=259 module=router
+bitxhub_solo      | time="2024-07-15T08:34:27.421" level=info msg="end send block to pier" count=1 elapse="162.202µs" height=259 module=router
+pier-ethereum3    | time="2024-07-15T08:34:27.422" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" height=259 index=17 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:27.422" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" module=bxh_adapter type=INTERCHAIN
+pier-ethereum2    | time="2024-07-15T08:34:27.422" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.654µs" height=259 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:27.422" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.329µs" height=259 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:27.422" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="469.903µs" height=259 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:27.424" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum3    | time="2024-07-15T08:34:27.424" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" elapse=1.738892ms index=17 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:27.424" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" current index=17 elapse="25.283µs" index=17 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-REQUEST" module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:27.424" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" elapse="166.556µs" index=17 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:27.424" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" index=17 module=exchanger timestamp=1721032467424670694 type=INTERCHAIN
+pier-ethereum3    | time="2024-07-15T08:34:27.424" level=info msg="start submit ibtp" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" module=appchain_adapter typ=INTERCHAIN
+ethereum-3        | INFO [07-15|08:34:27.480] Submitted transaction                    fullhash=0x54ac1e7bb4f3c392fef67a284672777f421431dce779899f3be15f376126395f recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum1    | time="2024-07-15T08:34:27.519" level=info msg="[2.1] bxh Adapter send tx" elapse=8.511210794s index=17 module=bxh_adapter type=INTERCHAIN
+ethereum-1        | INFO [07-15|08:34:29.000] Successfully sealed new block            number=926 sealhash="764b5b…46dfa8" hash="d813ff…85677c" elapsed=1.998s
+ethereum-1        | INFO [07-15|08:34:29.000] 🔗 block reached canonical chain          number=919 hash="5d809f…30832c"
+ethereum-1        | INFO [07-15|08:34:29.001] 🔨 mined potential block                  number=926 hash="d813ff…85677c"
+ethereum-1        | INFO [07-15|08:34:29.001] Commit new mining work                   number=927 sealhash="1c5e60…4726fa" uncles=0 txs=0 gas=0       fees=0            elapsed="492.49µs"
+ethereum-2        | INFO [07-15|08:34:29.006] Successfully sealed new block            number=926 sealhash="dea7b5…ff1061" hash="e276a1…3e2f7d" elapsed=2.002s
+ethereum-2        | INFO [07-15|08:34:29.007] 🔗 block reached canonical chain          number=919 hash="d03a2b…964bb9"
+ethereum-2        | INFO [07-15|08:34:29.007] 🔨 mined potential block                  number=926 hash="e276a1…3e2f7d"
+ethereum-2        | INFO [07-15|08:34:29.007] Commit new mining work                   number=927 sealhash="e522f1…edf7d1" uncles=0 txs=0 gas=0       fees=0            elapsed="342.65µs"
+ethereum-3        | INFO [07-15|08:34:29.000] Successfully sealed new block            number=926 sealhash="825ae1…31df38" hash="8da99d…91dc5d" elapsed=4.998s
+ethereum-3        | INFO [07-15|08:34:29.001] 🔗 block reached canonical chain          number=919 hash="37b0dd…ffab90"
+ethereum-3        | INFO [07-15|08:34:29.008] Commit new mining work                   number=927 sealhash="dc1f5f…4de6c2" uncles=0 txs=0 gas=0       fees=0            elapsed=7.440ms
+ethereum-3        | INFO [07-15|08:34:29.010] Commit new mining work                   number=927 sealhash="06b2aa…dda854" uncles=0 txs=1 gas=294745  fees=2.94745e-13  elapsed=10.029ms
+ethereum-3        | INFO [07-15|08:34:29.011] 🔨 mined potential block                  number=926 hash="8da99d…91dc5d"
+pier-ethereum2    | time="2024-07-15T08:34:29.011" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" index=51 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:29.011" level=info msg="Receive ibtp from :appchain:ethappchain2" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" index=51 module=exchanger type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:34:29.414" level=info msg="======== Call execute, height=260" module=order
+bitxhub_solo      | time="2024-07-15T08:34:29.414" level=info msg="Generated block" count=1 height=260 module=app
+bitxhub_solo      | time="2024-07-15T08:34:29.414" level=info msg="verify proof elapsed" count=1 fields.time="156.625µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:29.415" level=info msg="record invoke service" chainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:34:29.415" level=info msg="Apply transactions elapsed" count=1 fields.time="599.434µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:29.416" level=info msg="Persisted block" count=1 elapse="890.354µs" hash=0xbC36902F6f438e1FF4bf5de07dc8BfEA2f3758909E80c7D637D0A39047Aa7E2B height=260 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:29.416" level=info msg="Executed and Persisted block" count=1 elapse=2.083838ms height=260 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:29.416" level=info msg="classify block" count=1 elapse="8.583µs" height=260 module=router
+bitxhub_solo      | time="2024-07-15T08:34:29.416" level=info msg="end send block to pier" count=1 elapse="89.388µs" height=260 module=router
+bitxhub_solo      | time="2024-07-15T08:34:29.416" level=info msg="Report checkpoint" hash=0xbC36902F6f438e1FF4bf5de07dc8BfEA2f3758909E80c7D637D0A39047Aa7E2B height=260 module=order
+pier-ethereum2    | time="2024-07-15T08:34:29.416" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.481µs" height=260 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:29.416" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.766µs" height=260 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:29.417" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" height=260 index=51 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:29.417" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:29.417" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="133.341µs" height=260 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:29.418" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum1    | time="2024-07-15T08:34:29.419" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" elapse=1.743782ms index=51 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:29.419" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" current index=51 elapse="8.529µs" index=51 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:29.419" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" elapse="77.076µs" index=51 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:29.438" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+pier-ethereum1    | time="2024-07-15T08:34:29.438" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" index=51 module=exchanger timestamp=1721032469438253884 type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:29.438" level=info msg="start submit receipt" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-51" module=appchain_adapter typ=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:34:29.443" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+ethereum-1        | INFO [07-15|08:34:29.467] Submitted transaction                    fullhash=0xc267be0fb1d5f810ae77fbfc3420c8b2b29adf5df48597a0a761efa6bffc8dc5 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum2    | time="2024-07-15T08:34:29.515" level=info msg="[2.1] bxh Adapter send tx" elapse=503.924459ms index=51 module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:29.531" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+pier-ethereum2    | 2024-07-15T08:34:29.531Z [DEBUG] plugin.sh: 2024-07-15T08:34:29.529Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0xabd086d152ab224963f44bcc68f9943d93ff8c9031ee5b7ab00e6142ecf45fd0
+ethereum-1        | INFO [07-15|08:34:32.001] Commit new mining work                   number=927 sealhash="665042…39f266" uncles=0 txs=1 gas=54247   fees=5.4247e-14   elapsed="708.271µs"
+pier-ethereum1    | time="2024-07-15T08:34:33.024" level=error msg="Send ibtp with receipt error: recoverable error: grpc broker error: rpc error: code = NotFound desc = cannot found receipt for 0x18271Da25f9035c51dC6Ef8fE52C43a97d4f68eA5712c1192ffC969f136b58B8%!(EXTRA string=not found in DB)" module=bxh_adapter
+ethereum-2        | INFO [07-15|08:34:34.000] Successfully sealed new block            number=927 sealhash="e522f1…edf7d1" hash="ce7a72…9806b0" elapsed=4.993s
+ethereum-2        | INFO [07-15|08:34:34.000] 🔗 block reached canonical chain          number=920 hash="424526…09d707"
+ethereum-2        | INFO [07-15|08:34:34.000] 🔨 mined potential block                  number=927 hash="ce7a72…9806b0"
+ethereum-2        | INFO [07-15|08:34:34.001] Commit new mining work                   number=928 sealhash="28a14a…0f6869" uncles=0 txs=0 gas=0       fees=0            elapsed="342.574µs"
+ethereum-1        | INFO [07-15|08:34:34.000] Successfully sealed new block            number=927 sealhash="665042…39f266" hash="adeca9…906f86" elapsed=1.999s
+ethereum-1        | INFO [07-15|08:34:34.000] 🔗 block reached canonical chain          number=920 hash="eee0e5…8fb5b7"
+ethereum-1        | INFO [07-15|08:34:34.000] 🔨 mined potential block                  number=927 hash="adeca9…906f86"
+ethereum-3        | INFO [07-15|08:34:34.001] Successfully sealed new block            number=927 sealhash="06b2aa…dda854" hash="453395…00f617" elapsed=4.990s
+ethereum-3        | INFO [07-15|08:34:34.001] 🔗 block reached canonical chain          number=920 hash="4c587e…4ececa"
+ethereum-3        | INFO [07-15|08:34:34.001] 🔨 mined potential block                  number=927 hash="453395…00f617"
+ethereum-3        | INFO [07-15|08:34:34.001] Commit new mining work                   number=928 sealhash="ce1f82…747c3e" uncles=0 txs=0 gas=0       fees=0            elapsed="346.843µs"
+ethereum-1        | INFO [07-15|08:34:34.001] Commit new mining work                   number=928 sealhash="b07202…cd929c" uncles=0 txs=0 gas=0       fees=0            elapsed="322.82µs"
+pier-ethereum3    | time="2024-07-15T08:34:34.002" level=info msg="[step1] Receive ibtp from plugin" id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" index=17 module=exchanger timestamp=0 typ=RECEIPT_SUCCESS
+pier-ethereum3    | time="2024-07-15T08:34:34.002" level=info msg="Receive ibtp from :appchain:ethappchain3" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" index=17 module=exchanger type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:34:34.404" level=info msg="======== Call execute, height=261" module=order
+bitxhub_solo      | time="2024-07-15T08:34:34.404" level=info msg="Generated block" count=1 height=261 module=app
+bitxhub_solo      | time="2024-07-15T08:34:34.404" level=info msg="verify proof elapsed" count=1 fields.time="140.81µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:34.405" level=info msg="record invoke service" chainServiceID="ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:34:34.405" level=info msg="Apply transactions elapsed" count=1 fields.time="571.544µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:34.406" level=info msg="Persisted block" count=1 elapse="290.496µs" hash=0xb79BADd06772bd6e5F0F682fc76341a9e4B5debe87519a2713b7F37e2Fb3D806 height=261 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:34.406" level=info msg="Executed and Persisted block" count=1 elapse=1.447353ms height=261 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:34.406" level=info msg="classify block" count=1 elapse="8.509µs" height=261 module=router
+bitxhub_solo      | time="2024-07-15T08:34:34.406" level=info msg="end send block to pier" count=1 elapse="68.393µs" height=261 module=router
+pier-ethereum2    | time="2024-07-15T08:34:34.406" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="3.669µs" height=261 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum3    | time="2024-07-15T08:34:34.406" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.807µs" height=261 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:34.406" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" height=261 index=17 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:34.406" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:34.406" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="418.135µs" height=261 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:34.408" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum1    | time="2024-07-15T08:34:34.408" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" elapse=1.561101ms index=17 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:34.408" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" current index=17 elapse="7.758µs" index=17 key="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:34.408" level=info msg="[3.2] end insert pool" ID="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" elapse="181.362µs" index=17 module=bxh_adapter
+pier-ethereum1    | time="2024-07-15T08:34:34.408" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" index=17 module=exchanger timestamp=1721032474408918631 type=RECEIPT_SUCCESS
+pier-ethereum1    | time="2024-07-15T08:34:34.409" level=info msg="start submit receipt" ibtp="1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain3:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-17" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-1        | INFO [07-15|08:34:34.435] Submitted transaction                    fullhash=0x4abad657c3252200569c61f7ff66ccb77e06737e4732fc22a2ea6a75e3c201ec recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum1    | time="2024-07-15T08:34:34.470" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+pier-ethereum3    | 2024-07-15T08:34:34.483Z [DEBUG] plugin.sh: 2024-07-15T08:34:34.483Z [INFO]  client: SubmitIBTP:: %!s(bool=true)= txHash: =0x54ac1e7bb4f3c392fef67a284672777f421431dce779899f3be15f376126395f
+pier-ethereum3    | time="2024-07-15T08:34:34.483" level=info msg="appchain adapter submit ibtp success" module=appchain_adapter
+pier-ethereum3    | time="2024-07-15T08:34:34.505" level=info msg="[2.1] bxh Adapter send tx" elapse=503.061146ms index=17 module=bxh_adapter type=RECEIPT_SUCCESS
+bitxhub_solo      | time="2024-07-15T08:34:35.427" level=info msg="======== Call execute, height=262" module=order
+bitxhub_solo      | time="2024-07-15T08:34:35.427" level=info msg="Generated block" count=1 height=262 module=app
+bitxhub_solo      | time="2024-07-15T08:34:35.427" level=info msg="verify proof elapsed" count=1 fields.time="139.352µs" module=executor type=serial
+bitxhub_solo      | time="2024-07-15T08:34:35.428" level=info msg="record invoke service" chainServiceID="ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" fromChainServiceID="ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9" module=executor result=true
+bitxhub_solo      | time="2024-07-15T08:34:35.428" level=info msg="Apply transactions elapsed" count=1 fields.time="551.288µs" module=executor
+bitxhub_solo      | time="2024-07-15T08:34:35.429" level=info msg="Persisted block" count=1 elapse="294.408µs" hash=0x8B7c1bb8CEBcCAebBc1bF2CeC9C3cb4976CA4cdb36853f9ac357D2947B8dDD1D height=262 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:35.429" level=info msg="Executed and Persisted block" count=1 elapse=1.397391ms height=262 module=executor
+bitxhub_solo      | time="2024-07-15T08:34:35.429" level=info msg="classify block" count=1 elapse="12.691µs" height=262 module=router
+bitxhub_solo      | time="2024-07-15T08:34:35.429" level=info msg="end send block to pier" count=1 elapse="104.685µs" height=262 module=router
+pier-ethereum2    | time="2024-07-15T08:34:35.429" level=info msg="[3] receive ibtp from bxh" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" height=262 index=24 module=bxh_adapter
+pier-ethereum3    | time="2024-07-15T08:34:35.429" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="12.674µs" height=262 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum2    | time="2024-07-15T08:34:35.429" level=info msg="Sync IBTP from bitxhub" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" module=bxh_adapter type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:35.429" level=info msg="[4] Handle interchain tx wrapper" count=1 elapse="257.475µs" height=262 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+pier-ethereum1    | time="2024-07-15T08:34:35.430" level=info msg="[4] Handle interchain tx wrapper" count=0 elapse="2.19µs" height=262 index=0 module=bxh_adapter multi IDs="[]" timeout IDs="[]"
+bitxhub_solo      | time="2024-07-15T08:34:35.431" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+pier-ethereum2    | time="2024-07-15T08:34:35.437" level=info msg="[3.1] receive multi sign" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" elapse=7.919143ms index=24 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:35.437" level=info msg="[3.2.1] start insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" current index=24 elapse="8.643µs" index=24 key="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-RESPONSE" module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:35.437" level=info msg="[3.2] end insert pool" ID="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" elapse="86.176µs" index=24 module=bxh_adapter
+pier-ethereum2    | time="2024-07-15T08:34:35.438" level=info msg="[step5] Receive ibtp from :bitxhub:1356" ibtp_id="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" index=24 module=exchanger timestamp=1721032475438064793 type=RECEIPT_SUCCESS
+pier-ethereum2    | time="2024-07-15T08:34:35.438" level=info msg="start submit receipt" ibtp="1356:ethappchain2:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-1356:ethappchain1:0x48c60e86ccb66067F923F3F05ef602Ae2F28cbf9-24" module=appchain_adapter typ=RECEIPT_SUCCESS
+ethereum-2        | INFO [07-15|08:34:35.457] Submitted transaction                    fullhash=0x4fabdd0c6daa0c937a4e5a1139f68eb890ba5402ffe12029fc223da13daea8b7 recipient=0x668a209Dc6562707469374B8235e37b8eC25db08
+pier-ethereum1    | time="2024-07-15T08:34:35.528" level=info msg="[2.1] bxh Adapter send tx" elapse=16.518658429s index=24 module=bxh_adapter type=RECEIPT_SUCCESS
+ethereum-2        | INFO [07-15|08:34:37.001] Commit new mining work                   number=928 sealhash="af48d4…84dfc6" uncles=0 txs=1 gas=54247   fees=5.4247e-14   elapsed="848.427µs"
+ethereum-1        | INFO [07-15|08:34:37.001] Commit new mining work                   number=928 sealhash="626d36…451306" uncles=0 txs=1 gas=54235   fees=5.4235e-14   elapsed="950.913µs"
+ethereum-3        | INFO [07-15|08:34:39.000] Successfully sealed new block            number=928 sealhash="ce1f82…747c3e" hash="8f871c…a64b4c" elapsed=4.998s
+ethereum-3        | INFO [07-15|08:34:39.000] 🔗 block reached canonical chain          number=921 hash="6d0374…517f52"
+ethereum-3        | INFO [07-15|08:34:39.000] 🔨 mined potential block                  number=928 hash="8f871c…a64b4c"
+ethereum-2        | INFO [07-15|08:34:39.000] Successfully sealed new block            number=928 sealhash="af48d4…84dfc6" hash="f99930…5b17b7" elapsed=1.999s
+ethereum-2        | INFO [07-15|08:34:39.000] 🔗 block reached canonical chain          number=921 hash="7a9f8c…b944d5"
+ethereum-2        | INFO [07-15|08:34:39.000] 🔨 mined potential block                  number=928 hash="f99930…5b17b7"
+ethereum-3        | INFO [07-15|08:34:39.001] Commit new mining work                   number=929 sealhash="77a55e…5166ca" uncles=0 txs=0 gas=0       fees=0            elapsed="334.813µs"
+ethereum-2        | INFO [07-15|08:34:39.001] Commit new mining work                   number=929 sealhash="0b9b6b…48d8fa" uncles=0 txs=0 gas=0       fees=0            elapsed="345.235µs"
+ethereum-1        | INFO [07-15|08:34:39.000] Successfully sealed new block            number=928 sealhash="626d36…451306" hash="2178ed…de78cb" elapsed=1.998s
+ethereum-1        | INFO [07-15|08:34:39.001] 🔗 block reached canonical chain          number=921 hash="32d62c…a3edf1"
+ethereum-1        | INFO [07-15|08:34:39.001] Commit new mining work                   number=929 sealhash="0eb48c…0d8467" uncles=0 txs=0 gas=0       fees=0            elapsed="565.678µs"
+ethereum-1        | INFO [07-15|08:34:39.001] 🔨 mined potential block                  number=928 hash="2178ed…de78cb"
+pier-ethereum1    | time="2024-07-15T08:34:39.439" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+pier-ethereum2    | time="2024-07-15T08:34:40.460" level=info msg="appchain adapter submit receipt success" module=appchain_adapter
+ethereum-1        | INFO [07-15|08:34:44.000] Successfully sealed new block            number=929 sealhash="0eb48c…0d8467" hash="79b020…764318" elapsed=4.999s
+ethereum-3        | INFO [07-15|08:34:44.000] Successfully sealed new block            number=929 sealhash="77a55e…5166ca" hash="faadcc…ce39a6" elapsed=4.999s
+ethereum-3        | INFO [07-15|08:34:44.000] 🔗 block reached canonical chain          number=922 hash="6c0e61…50c48c"
+ethereum-3        | INFO [07-15|08:34:44.000] 🔨 mined potential block                  number=929 hash="faadcc…ce39a6"
+ethereum-3        | INFO [07-15|08:34:44.001] Commit new mining work                   number=930 sealhash="95c904…4b93cf" uncles=0 txs=0 gas=0       fees=0            elapsed="351.73µs"
+ethereum-1        | INFO [07-15|08:34:44.001] 🔗 block reached canonical chain          number=922 hash="cc8aa5…f380f8"
+ethereum-1        | INFO [07-15|08:34:44.001] 🔨 mined potential block                  number=929 hash="79b020…764318"
+ethereum-1        | INFO [07-15|08:34:44.001] Commit new mining work                   number=930 sealhash="23b143…2918b8" uncles=0 txs=0 gas=0       fees=0            elapsed="945.889µs"
+ethereum-2        | INFO [07-15|08:34:44.000] Successfully sealed new block            number=929 sealhash="0b9b6b…48d8fa" hash="d9a848…ae4e85" elapsed=4.999s
+ethereum-2        | INFO [07-15|08:34:44.000] 🔗 block reached canonical chain          number=922 hash="cd63ea…a70342"
+ethereum-2        | INFO [07-15|08:34:44.000] 🔨 mined potential block                  number=929 hash="d9a848…ae4e85"
+ethereum-2        | INFO [07-15|08:34:44.001] Commit new mining work                   number=930 sealhash="2acbd9…e682c2" uncles=0 txs=0 gas=0       fees=0            elapsed="356.925µs"
+ethereum-2        | INFO [07-15|08:34:49.001] Successfully sealed new block            number=930 sealhash="2acbd9…e682c2" hash="4c9d71…51b354" elapsed=5.000s
+ethereum-2        | INFO [07-15|08:34:49.001] 🔗 block reached canonical chain          number=923 hash="9d84b8…008b4b"
+ethereum-2        | INFO [07-15|08:34:49.001] 🔨 mined potential block                  number=930 hash="4c9d71…51b354"
+ethereum-3        | INFO [07-15|08:34:49.001] Successfully sealed new block            number=930 sealhash="95c904…4b93cf" hash="7839e3…e96317" elapsed=4.999s
+ethereum-3        | INFO [07-15|08:34:49.001] 🔗 block reached canonical chain          number=923 hash="b38dac…8063bc"
+ethereum-3        | INFO [07-15|08:34:49.001] 🔨 mined potential block                  number=930 hash="7839e3…e96317"
+ethereum-3        | INFO [07-15|08:34:49.001] Commit new mining work                   number=931 sealhash="b1e02b…420584" uncles=0 txs=0 gas=0       fees=0            elapsed="710.545µs"
+ethereum-1        | INFO [07-15|08:34:49.002] Successfully sealed new block            number=930 sealhash="23b143…2918b8" hash="10f984…3d307b" elapsed=5.000s
+ethereum-1        | INFO [07-15|08:34:49.002] 🔗 block reached canonical chain          number=923 hash="22dd86…22c6ed"
+ethereum-1        | INFO [07-15|08:34:49.002] 🔨 mined potential block                  number=930 hash="10f984…3d307b"
+ethereum-1        | INFO [07-15|08:34:49.002] Commit new mining work                   number=931 sealhash="75ead3…726022" uncles=0 txs=0 gas=0       fees=0            elapsed="350.247µs"
+ethereum-2        | INFO [07-15|08:34:49.002] Commit new mining work                   number=931 sealhash="f8a1a5…a5ba6b" uncles=0 txs=0 gas=0       fees=0            elapsed="398.283µs"
+928

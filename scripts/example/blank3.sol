@@ -14,8 +14,8 @@ contract blank3 is StateContract {
     address entry;
     mapping(string=>bytes[]) states;
     uint64 temp_adder;
-    bytes[] blank1;
-    bytes[] blank2;
+    int n ;
+
 
 
     function set(address _blank1, address _blank2,address _entry,string memory _ts) public {
@@ -25,6 +25,7 @@ contract blank3 is StateContract {
         num = 0;
         temp_adder = 0;
         server = _ts;
+        n = 0;
     }
     function setadder(uint64 a)public{
         temp_adder = a;
@@ -38,6 +39,7 @@ contract blank3 is StateContract {
 
 
     function lockAll() public returns(bool){
+        n = 0;
         bytes[] memory args1 = new bytes[](2);
         args1[0] = abi.encodePacked(uint64(0));
         args1[1] = abi.encodePacked("blank1");
@@ -53,7 +55,7 @@ contract blank3 is StateContract {
     }
 
     function lockone(uint64 ser1) public returns(bool){
-        
+        n = -2;
         bytes[] memory args = new bytes[](2);
         args[0] = abi.encodePacked(uint64(0));
         if (ser1 == 1){
@@ -78,8 +80,8 @@ contract blank3 is StateContract {
         if (!a||!b){
             return false;
         }     
-        uint64 num1 = uint64(bytesToUint64(arg1[2]));
-        uint64 num2 = uint64(bytesToUint64(arg2[2]));
+        uint64 num1 = uint64(bytesToUint64(arg1[3]));
+        uint64 num2 = uint64(bytesToUint64(arg2[3]));
 
     
         num1 = L_blank(l_blank1).add(num1,adder);
@@ -99,13 +101,19 @@ contract blank3 is StateContract {
         return true;
     }
     function  updateState(bytes[] memory args) public override{
-        uint64 num1 = uint64(bytesToUint64(args[3]));
-        num1 = L_blank(l_blank1).add(num1,temp_adder);
+        n += 1;
+        if(n==-1){
+            uint64 num1 = uint64(bytesToUint64(args[3]));
+            num1 = L_blank(l_blank1).add(num1,temp_adder);
 
-        args[0] = abi.encodePacked(uint64(0));
-        args[3] = abi.encodePacked(uint64(num1));
-        num += temp_adder;
-        Entry(entry).updateState(args);
+            args[0] = abi.encodePacked(uint64(0));
+            args[3] = abi.encodePacked(uint64(num1));
+            num += temp_adder;
+            Entry(entry).updateState(args);
+        }else if(n==2){
+            Execute(temp_adder);
+        }
+        
 
     }
 

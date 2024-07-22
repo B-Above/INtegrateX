@@ -366,9 +366,9 @@ contract Broker {
             isRollback = true;
         }
 
-        // require(BrokerData(dataAddr).invokeIndexUpdate(srcFullID, dstFullID, index, 1));
+        require(BrokerData(dataAddr).invokeIndexUpdate(srcFullID, dstFullID, index, 1));
 
-        // require(BrokerData(dataAddr).checkReceiptMultiSigns(srcFullID, dstFullID, index, typ, results, txStatus, signatures, validators, valThreshold), "invalid Receipt-multi-signature");
+        //require(BrokerData(dataAddr).checkReceiptMultiSigns(srcFullID, dstFullID, index, typ, results, txStatus, signatures, validators, valThreshold), "invalid Receipt-multi-signature");
 
         string memory outServicePair = genServicePair(srcFullID, dstFullID);
 
@@ -423,10 +423,10 @@ contract Broker {
         if (txStatus != 0 && txStatus != 3) {
             isRollback = true;
         }
-        {
-            require(BrokerData(dataAddr).invokeIndexUpdate(srcFullID, dstFullID, index, 1));
-            require(BrokerData(dataAddr).checkReceiptMultiSigns(srcFullID, dstFullID, index, typ, results, txStatus, signatures, validators, valThreshold));
-        }
+        // {
+             require(BrokerData(dataAddr).invokeIndexUpdate(srcFullID, dstFullID, index, 1));
+        //     require(BrokerData(dataAddr).checkReceiptMultiSigns(srcFullID, dstFullID, index, typ, results, txStatus, signatures, validators, valThreshold));
+        // }
 
         string memory outServicePair = genServicePair(srcFullID, dstFullID);
 

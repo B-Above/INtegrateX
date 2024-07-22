@@ -52,6 +52,7 @@ function docker-compose-up() {
   chmod +x $CURRENT_PATH/deploy_contracts.sh
   chmod +x $CURRENT_PATH/deploy_example.sh
   chmod +x $CURRENT_PATH/deploy_example3.sh
+  chmod +x $CURRENT_PATH/deploy_example4.sh
   chmod +x $PIER_SCRIPTS_PATH/pier1-eth/start.sh
   chmod +x $PIER_SCRIPTS_PATH/pier2-eth/start.sh
   chmod +x $PIER_SCRIPTS_PATH/pier3-eth/start.sh
@@ -168,6 +169,7 @@ function docker-compose-up() {
   print_blue "======> deploy example"
   # ./deploy_example.sh
   ./deploy_example3.sh
+  #./deploy_example4.sh
 
   # get cid
   bitxhubCID=$(docker ps -qf name="bitxhub_solo")

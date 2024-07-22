@@ -1,8 +1,8 @@
 import datetime
 import re
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
+# import matplotlib.pyplot as plt
+# import matplotlib.font_manager as fm
 
 
 def extrat(filename):
@@ -121,9 +121,38 @@ file_path = ['./3/3l1.txt','./3/3e1.txt','./3/3l2.txt','./3/3e2.txt','./3/3l3.tx
 # 3i
 file_path = ['./new/3i0','./new/3i1','./new/3i2','./new/3i3','./new/3i4']
 endnum = [387,422,453,484,438]
+file_path = ['./new/4i0','./new/4i1','./new/4i2','./new/4i3','./new/4i4']
+endnum = [209,232,255,276,292]
+file_path = ['./new/5i0','./new/5i1','./new/5i2','./new/5i3','./new/5i4']
+endnum = [448,460,495,513,533]
 # 3c
 # file_path = ['./new/3c0','./new/3c1','./new/3c2','./new/3c3','./new/3c4']
 # endnum = [122,181,217,248,274]
+times = []
+k = []    
+rest = []
+for i in range(len(file_path)):
+    print(file_path[i])
+
+    # k = read_file_and_find_gas(i,'INFO')
+    # res = calculate_onchain(k)
+    # time_diff = calculate_time_difference(i)
+    # res[5] = time_diff.total_seconds()*1e6
+    # res[4] = res[5] - res[3]
+    # print(res)
+    # rest.append(res)
+    times.append(calculate_time_difference(file_path[i],endnum[i]).total_seconds())
+    print(times[i])
+average = np.array(times).mean()
+print(average)
+
+# 3c
+file_path = ['./new/3c0','./new/3c1','./new/3c2','./new/3c3','./new/3c4']
+endnum = [122,181,217,248,274]
+file_path = ['./new/4c0','./new/4c1','./new/4c2','./new/4c3','./new/4c4']
+endnum = [808,835,871,903,928]
+file_path = ['./new/5c0','./new/5c2','./new/5c3','./new/5c4']
+endnum = [106,762,795,827]
 times = []
 k = []    
 rest = []

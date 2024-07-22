@@ -4,7 +4,7 @@ pragma experimental ABIEncoderV2;
 contract DataSwapper {
     mapping(string => string) dataM; // map for accounts
     // change the address of Broker accordingly
-    address BrokerAddr;
+       address BrokerAddr;
 
     // AccessControl
     modifier onlyBroker {
@@ -12,13 +12,13 @@ contract DataSwapper {
         _;
     }
 
-    constructor(address _brokerAddr) public {
+    constructor(address _brokerAddr, bool _ordered) {
         BrokerAddr = _brokerAddr;
-        Broker(BrokerAddr).register();
+        Broker(BrokerAddr).register(_ordered);
     }
 
-    function register() public {
-        Broker(BrokerAddr).register();
+    function register(bool _ordered) public {
+        Broker(BrokerAddr).register(_ordered);
     }
 
     // contract for data exchange
@@ -26,14 +26,13 @@ contract DataSwapper {
         return dataM[key];
     }
 
-    function get(string memory destChainServiceID, string memory key) public {
-        bytes[] memory args = new bytes[](1);
-        args[0] = abi.encodePacked(key);
+    function get(string memory destChainServiceID, string memory key, string memory value) public {
+        bytes[] memory args = new bytes[](3);
+        args[0] = abi.encodePacked(uint64(0));
+        args[1] = abi.encodePacked(key);
+        args[2] = abi.encodePacked(value);
 
-        bytes[] memory argsCb = new bytes[](1);
-        argsCb[0] = abi.encodePacked(key);
-
-        Broker(BrokerAddr).emitInterchainEvent(destChainServiceID, "interchainGet", args, "interchainSet", argsCb, "", new bytes[](0), false);
+        Broker(BrokerAddr).emitInterchainEvent(destChainServiceID, "interchainGet", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
     }
 
     function set(string memory key, string memory value) public {
@@ -48,13 +47,12 @@ contract DataSwapper {
     }
 
     function interchainGet(bytes[] memory args, bool isRollback) public onlyBroker returns(bytes[] memory) {
-        require(args.length == 1, "interchainGet args' length is not correct, expect 1");
+        require(args.length == 2, "interchainGet args' length is not correct, expect 2");
         string memory key = string(args[0]);
+        string memory value = string(args[1]);
+        dataM[key] = value;
 
-        bytes[] memory result = new bytes[](1);
-        result[0] = abi.encodePacked(dataM[key]);
-
-        return result;
+        return new bytes[](0);
     }
 }
 
@@ -67,7 +65,8 @@ abstract contract Broker {
         bytes[] memory argsCb,
         string memory funcRb,
         bytes[] memory argsRb,
-        bool isEncrypt) public virtual;
+        bool isEncrypt,
+        string[] memory group) public virtual;
 
-    function register() public virtual;
+    function register(bool ordered) public virtual;
 }

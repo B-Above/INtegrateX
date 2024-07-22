@@ -56,12 +56,13 @@ contract blank4 is StateContract{
         temp = num;
         bytes[] memory args;
         bool a = false;
-        args = new bytes[](5);
+        args = new bytes[](6);
         args[0] = abi.encodePacked(uint64(0));
         args[1] = abi.encodePacked("bc1");
         args[2] = abi.encodePacked(num);
         args[3] = abi.encodePacked(num);
         args[4] = abi.encodePacked(num);
+        args[5] = abi.encodePacked(num);
         a = Entry(entry).lockChainMode(args);
         
         return a;
@@ -69,10 +70,11 @@ contract blank4 is StateContract{
 
 
     function  updateState(bytes[] memory args) public override{
-        bytes[] memory res = new bytes[](3);
+        bytes[] memory res = new bytes[](4);
         res[0] = abi.encodePacked("bc1");
         res[1] = abi.encodePacked("bc2");
         res[2] = abi.encodePacked("bc3");
+        res[3] = abi.encodePacked("bc4");
         price += temp;    
         
         Entry(entry).updateChainMode(res);

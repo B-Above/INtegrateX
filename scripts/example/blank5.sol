@@ -9,11 +9,12 @@ abstract contract StateContract {
     function updateState(bytes[] memory args) public virtual;
 }
 
-contract blank4 is StateContract {
+contract blank5 is StateContract {
     uint64 num ;
     address l_blank1;
     address l_blank2;
     address l_blank3;
+    address l_blank4;
     address entry;
     mapping(string=>bytes[]) states;
     uint64 temp_adder;
@@ -49,13 +50,12 @@ contract blank4 is StateContract {
             args[3] = abi.encodePacked(uint64(num1));
             num += temp_adder;
             Entry(entry).updateState(args);
-        }else if(n==3){
-            if(m == 0){
-                Execute(temp_adder);
-            }else{
+        }else if(n==4){
+            if(m == 1){
                 ExecuteMulti(temp_adder);
+            }else {
+                Execute(temp_adder);
             }
-            
         }
         
     }
@@ -89,15 +89,17 @@ contract blank4 is StateContract {
         return true;
     }
 
-    function set(address _blank1, address _blank2,address _blank3,address _entry,string memory _ts) public {
+    function set(address _blank1, address _blank2,address _blank3,address _blank4,address _entry,string memory _ts) public {
         l_blank1 = _blank1;
         l_blank2 = _blank2;
         l_blank3 = _blank3;
+        l_blank4 = _blank4;
         entry = _entry;
         num = 0;
-        temp_adder = 0;
+        temp_adder = 1;
         server = _ts;
         n = 0;
+        m = 0;
     }
 
     function setNum(uint64 a)public{
@@ -120,60 +122,80 @@ contract blank4 is StateContract {
         bytes[] memory args3 = new bytes[](2);
         args3[0] = abi.encodePacked(uint64(0));
         args3[1] = abi.encodePacked("blank3");
+        bytes[] memory args4 = new bytes[](2);
+        args4[0] = abi.encodePacked(uint64(0));
+        args4[1] = abi.encodePacked("blank4");
 
         bool a = Entry(entry).lockState(args1);
         bool b = Entry(entry).lockState(args2);
         bool c = Entry(entry).lockState(args3);
-        return (a&&b&&c);
+        bool d = Entry(entry).lockState(args4);
+        return (a&&b&&c&&d);
     }
 
-    function lockMulit() public returns(bool){
-        n = 0; 
-        m = 1;
+        function lockMulit() public returns(bool){
+        n = 0;
+        m = 1; 
         bytes[] memory args1 = new bytes[](3);
         args1[0] = abi.encodePacked(uint64(0));
         args1[1] = abi.encodePacked("blank1");
         args1[2] = abi.encodePacked("blank3");
-        bytes[] memory args2 = new bytes[](2);
+        bytes[] memory args2 = new bytes[](3);
         args2[0] = abi.encodePacked(uint64(0));
         args2[1] = abi.encodePacked("blank2");
+        args2[2] = abi.encodePacked("blank4");
 
         bool a = Entry(entry).lockMulti(args1);
-        bool b = Entry(entry).lockState(args2);
+        bool b = Entry(entry).lockMulti(args2);
         
         return (a&&b);
     }
 
     function Execute(uint64 adder) public returns(bool){
         bytes[] memory arg1;
-        bytes[] memory arg2;
-        bytes[] memory arg3;
+ 
         bool a;
-        bool b;
-        bool c;
         (a,arg1)= Entry(entry).getState("blank1");
-        (b,arg2)= Entry(entry).getState("blank2");
-        (c,arg3)= Entry(entry).getState("blank3");
-        if (!a||!b||!c){
+        if (!a){
             return false;
         }     
         uint64 num1 = uint64(bytesToUint64(arg1[3]));
-        uint64 num2 = uint64(bytesToUint64(arg2[3]));
-        uint64 num3 = uint64(bytesToUint64(arg3[3]));
-    
         num1 = L_blank(l_blank1).add(num1,adder);
-        num2 = L_blank(l_blank2).add(num2,adder);
-        num3 = L_blank(l_blank3).add(num3,adder);
-
         arg1[0] = abi.encodePacked(uint64(0));
-        arg2[0] = abi.encodePacked(uint64(0));
-        arg3[0] = abi.encodePacked(uint64(0));
         arg1[3] = abi.encodePacked(uint64(num1));
-        arg2[3] = abi.encodePacked(uint64(num2));
-        arg3[3] = abi.encodePacked(uint64(num3));
         Entry(entry).updateState(arg1);
-        Entry(entry).updateState(arg2);
-        Entry(entry).updateState(arg3);
+
+        (a,arg1)= Entry(entry).getState("blank2");
+        if (!a){
+            return false;
+        }     
+        num1 = uint64(bytesToUint64(arg1[3]));
+        num1 = L_blank(l_blank2).add(num1,adder);
+        arg1[0] = abi.encodePacked(uint64(0));
+        arg1[3] = abi.encodePacked(uint64(num1));
+        Entry(entry).updateState(arg1);
+
+        (a,arg1)= Entry(entry).getState("blank3");
+        if (!a){
+            return false;
+        }     
+        num1 = uint64(bytesToUint64(arg1[3]));
+        num1 = L_blank(l_blank3).add(num1,adder);
+        arg1[0] = abi.encodePacked(uint64(0));
+        arg1[3] = abi.encodePacked(uint64(num1));
+        Entry(entry).updateState(arg1);
+
+        (a,arg1)= Entry(entry).getState("blank4");
+        if (!a){
+            return false;
+        }     
+        num1 = uint64(bytesToUint64(arg1[3]));
+        num1 = L_blank(l_blank4).add(num1,adder);
+        arg1[0] = abi.encodePacked(uint64(0));
+        arg1[3] = abi.encodePacked(uint64(num1));
+        Entry(entry).updateState(arg1);
+        
+        
         num += adder;
         return true;
     }
@@ -181,11 +203,11 @@ contract blank4 is StateContract {
     function ExecuteMulti(uint64 adder) public returns(bool){
         bytes[] memory arg1;
         bytes[] memory res = new bytes[](9);
-        bytes[] memory res2;
+        bytes[] memory res2 = new bytes[](9);
         res[0] = abi.encodePacked(uint64(0));
         res[1] = abi.encodePacked(uint64(3));
-        
-        
+        res2[0] = abi.encodePacked(uint64(0));
+        res2[1] = abi.encodePacked(uint64(3));
 
  
         bool a;
@@ -200,14 +222,15 @@ contract blank4 is StateContract {
         res[4] = abi.encodePacked(uint64(num1));
         Entry(entry).updateState(arg1);
 
-        (a,res2)= Entry(entry).getState("blank2");
+        (a,arg1)= Entry(entry).getState("blank2");
         if (!a){
             return false;
         }     
         uint64 num2 = uint64(bytesToUint64(arg1[3]));
         num2 = L_blank(l_blank2).add(num2,adder);
-        res2[0] = abi.encodePacked(uint64(0));
-        res2[3] = abi.encodePacked(uint64(num2));
+        res2[2] = arg1[1];
+        res2[3] = arg1[2];
+        res2[4] = abi.encodePacked(uint64(num2));
 
         (a,arg1)= Entry(entry).getState("blank3");
         if (!a){
@@ -220,7 +243,21 @@ contract blank4 is StateContract {
         res[7] = arg1[2];
         res[8] = abi.encodePacked(uint64(num1));
         Entry(entry).updateMulti(res);
-        Entry(entry).updateState(res2);
+
+        
+
+        (a,arg1)= Entry(entry).getState("blank4");
+        if (!a){
+            return false;
+        }     
+        res2[5] = abi.encodePacked(uint64(3));
+        num2 = uint64(bytesToUint64(arg1[3]));
+        num2 = L_blank(l_blank3).add(num2,adder);
+        res2[6] = arg1[1];
+        res2[7] = arg1[2];
+        res2[8] = abi.encodePacked(uint64(num2));
+        Entry(entry).updateMulti(res2);
+        
         
         num += adder;
         return true;
