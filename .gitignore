@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+.vscode
+a_repo-packr.go
+a_main-packr.go

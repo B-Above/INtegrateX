@@ -1,0 +1,13 @@
+version: "3"
+services:
+  ethereum-4:
+    init: true
+    image: ethereum:inx
+    container_name: ethereum-4
+    command: --datadir /root/datadir --dev --dev.period 5 --ws --http --http.corsdomain https://remix.ethereum.org --http.addr "0.0.0.0" --http.port 8545 --ws.addr "0.0.0.0" --http.api "eth,web3,personal,net,miner,admin,debug"
+    restart: always
+    ports:
+      - 8552:8546
+      - 8541:8545
+      - 30306:30303   
+    

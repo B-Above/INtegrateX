@@ -1,0 +1,131 @@
+version: "3"
+services:
+  bitxhub_solo:
+    restart: always
+    container_name: bitxhub_solo
+    #init: true
+    image: meshplus/bitxhub:v2.8.0
+    ports:
+      - 60011:60011
+      - 9091:9091
+      - 53121:53121
+      - 40011:40011
+    volumes:
+      - ../bitxhub.toml:/root/.bitxhub/bitxhub.toml:ro
+      - ../bitxhubCerts:/root/.bitxhub/certs
+      - ../../bitxhub:/root/.bitxhub/scripts
+      - ../adminKey.json:/root/.bitxhub/key.json
+  ethereum-1:
+    #init: true
+    image: ethereum:inx
+    container_name: ethereum-1
+    command: --datadir /root/datadir --dev --dev.period 5 --ws --http --http.corsdomain https://remix.ethereum.org --http.addr "0.0.0.0" --http.port 8545 --ws.addr "0.0.0.0" --http.api "eth,web3,personal,net,miner,admin,debug"
+    restart: always
+    ports:
+      - 8546:8546
+      - 8545:8545
+      - 30303:30303
+  ethereum-2:
+    #init: true
+    image: ethereum:inx
+    container_name: ethereum-2
+    command: --datadir /root/datadir --dev --dev.period 5 --ws --http --http.corsdomain https://remix.ethereum.org --http.addr "0.0.0.0" --http.port 8545 --ws.addr "0.0.0.0" --http.api "eth,web3,personal,net,miner,admin,debug"
+    restart: always
+    ports:
+      - 8548:8546
+      - 8547:8545
+      - 30304:30303
+  ethereum-3:
+    #init: true
+    image: ethereum:inx
+    container_name: ethereum-3
+    command: --datadir /root/datadir --dev --dev.period 5 --ws --http --http.corsdomain https://remix.ethereum.org --http.addr "0.0.0.0" --http.port 8545 --ws.addr "0.0.0.0" --http.api "eth,web3,personal,net,miner,admin,debug"
+    restart: always
+    ports:
+      - 8550:8546
+      - 8549:8545
+      - 30305:30303       
+  pier-ethereum1:
+    #init: true
+    restart: always
+    image: meshplus/pier-ethereum:v2.8.0
+    container_name: pier-ethereum1
+    entrypoint: [ "/bin/sh","-c",'/root/wait_for.sh bitxhub_solo:9091/v1/info?type=0 -p http -r {\"data\":\"bm9ybWFs\"} /root/start.sh' ]
+    depends_on:
+      - bitxhub_solo
+      - ethereum-1
+    volumes:
+      - ../../pier:/root/.pier/scripts
+      - ../../pier/pier1-eth/pier.toml:/root/.pier/pier.toml:ro
+      - ../../pier/pier1-eth/key.json:/root/.pier/key.json:ro
+      - ../../pier/pier1-eth/network.toml:/root/.pier/network.toml:ro
+      - ../../pier/pier1-eth/node.csr:/root/.pier/node.csr:ro
+      - ../../pier/pier1-eth/node.priv:/root/.pier/node.priv:ro
+      - ../../pier/pier1-eth/logs:/root/.pier/logs:rw
+      - ../../pier/pier1-eth/ethereum:/root/.pier/ethereum:ro
+      - ../../pier/pier1-eth/certs:/root/.pier/certs:ro
+      - ../../pier/pier1-eth/start.sh:/root/start.sh
+      - ../wait_for.sh:/root/wait_for.sh
+  pier-ethereum2:
+    #init: true
+    restart: always
+    image: meshplus/pier-ethereum:v2.8.0
+    container_name: pier-ethereum2
+    entrypoint: [ "/bin/sh","-c",'/root/wait_for.sh bitxhub_solo:9091/v1/info?type=0 -p http -r {\"data\":\"bm9ybWFs\"} /root/start.sh' ]
+    depends_on:
+      - bitxhub_solo
+      - ethereum-2
+    volumes:
+      - ../../pier:/root/.pier/scripts
+      - ../../pier/pier2-eth/pier.toml:/root/.pier/pier.toml:ro
+      - ../../pier/pier2-eth/key.json:/root/.pier/key.json:ro
+      - ../../pier/pier2-eth/network.toml:/root/.pier/network.toml:ro
+      - ../../pier/pier2-eth/node.csr:/root/.pier/node.csr:ro
+      - ../../pier/pier2-eth/node.priv:/root/.pier/node.priv:ro
+      - ../../pier/pier2-eth/logs:/root/.pier/logs:rw
+      - ../../pier/pier2-eth/ethereum:/root/.pier/ethereum:ro
+      - ../../pier/pier2-eth/certs:/root/.pier/certs:ro
+      - ../../pier/pier2-eth/start.sh:/root/start.sh
+      - ../wait_for.sh:/root/wait_for.sh
+  
+  pier-ethereum3:
+    #init: true
+    restart: always
+    image: meshplus/pier-ethereum:v2.8.0
+    container_name: pier-ethereum3
+    entrypoint: [ "/bin/sh","-c",'/root/wait_for.sh bitxhub_solo:9091/v1/info?type=0 -p http -r {\"data\":\"bm9ybWFs\"} /root/start.sh' ]
+    depends_on:
+      - bitxhub_solo
+      - ethereum-3
+    volumes:
+      - ../../pier:/root/.pier/scripts
+      - ../../pier/pier3-eth/pier.toml:/root/.pier/pier.toml:ro
+      - ../../pier/pier3-eth/key.json:/root/.pier/key.json:ro
+      - ../../pier/pier3-eth/network.toml:/root/.pier/network.toml:ro
+      - ../../pier/pier3-eth/node.csr:/root/.pier/node.csr:ro
+      - ../../pier/pier3-eth/node.priv:/root/.pier/node.priv:ro
+      - ../../pier/pier3-eth/logs:/root/.pier/logs:rw
+      - ../../pier/pier3-eth/ethereum:/root/.pier/ethereum:ro
+      - ../../pier/pier3-eth/certs:/root/.pier/certs:ro
+      - ../../pier/pier3-eth/start.sh:/root/start.sh
+      - ../wait_for.sh:/root/wait_for.sh
+  
+  prom:
+    restart: always
+    container_name: prometheus
+    #init: true
+    image: prom/prometheus
+    volumes:
+      - ../../prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command: "--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/prometheus"
+    ports:
+      - 9090:9090
+  grafana:
+    restart: always
+    container_name: grafana
+    #init: true
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    depends_on:
+      - prom

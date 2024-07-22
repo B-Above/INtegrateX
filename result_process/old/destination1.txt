@@ -1,0 +1,39 @@
+bitxhub_solo      | time="2024-06-06T07:55:52.399" level=warning msg="Receive transaction [account: 0xD389be2C1e6cCC9fB33aDc2235af8b449e3d14B4, nonce: 6, hash: 0x35D6bE1A245393B064d28dC35e1527F8652f9e0D2177f7620751DaA5eb494298], but mempool had already existed other tx[hash:0x3426832AA99D7B741a2b9FE1bfE007983E0439c388e5fB19e064cE8B6B53c99F]" module=order
+bitxhub_solo      | time="2024-06-06T07:55:52.700" level=info msg="======== Call execute, height=22" module=order
+bitxhub_solo      | time="2024-06-06T07:55:52.700" level=info msg="Generated block" count=1 height=22 module=app
+bitxhub_solo      | time="2024-06-06T07:55:52.700" level=info msg="verify proof elapsed" count=1 fields.time="101.709µs" module=executor type=serial
+bitxhub_solo      | time="2024-06-06T07:55:52.700" level=info msg="Apply transactions elapsed" count=1 fields.time="216.83µs" module=executor
+bitxhub_solo      | time="2024-06-06T07:55:52.701" level=info msg="Persisted block" count=1 elapse="188.583µs" hash=0x712EBBb00F9eAF27E5AA6a50f02D8FFCf2dB316bb5D260D2FaE50cc3747B9195 height=22 module=executor
+bitxhub_solo      | time="2024-06-06T07:55:52.701" level=info msg="Executed and Persisted block" count=1 elapse=1.091944ms height=22 module=executor
+bitxhub_solo      | time="2024-06-06T07:55:52.701" level=info msg="classify block" count=1 elapse="6.059µs" height=22 module=router
+bitxhub_solo      | time="2024-06-06T07:55:52.701" level=info msg="end send block to pier" count=1 elapse="57.787µs" height=22 module=router
+bitxhub_solo      | time="2024-06-06T07:55:52.702" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+bitxhub_solo      | time="2024-06-06T07:55:53.000" level=info msg="======== Call execute, height=23" module=order
+bitxhub_solo      | time="2024-06-06T07:55:53.000" level=info msg="Generated block" count=1 height=23 module=app
+bitxhub_solo      | time="2024-06-06T07:55:53.000" level=info msg="verify proof elapsed" count=1 fields.time="88.131µs" module=executor type=serial
+bitxhub_solo      | time="2024-06-06T07:55:53.000" level=info msg="record invoke service" chainServiceID="ethappchain3:0xb00AC45963879cb9118d13120513585873f81Cdb" fromChainServiceID="ethappchain1:0xb00AC45963879cb9118d13120513585873f81Cdb" module=executor result=true
+bitxhub_solo      | time="2024-06-06T07:55:53.000" level=info msg="Apply transactions elapsed" count=1 fields.time="301.438µs" module=executor
+bitxhub_solo      | time="2024-06-06T07:55:53.001" level=info msg="Persisted block" count=1 elapse="183.246µs" hash=0xd1E7e9Bf5109d6E00f49D2BE81B020BBaA76641447728A34a904B5391FDF97C6 height=23 module=executor
+bitxhub_solo      | time="2024-06-06T07:55:53.001" level=info msg="Executed and Persisted block" count=1 elapse="847.496µs" height=23 module=executor
+bitxhub_solo      | time="2024-06-06T07:55:53.001" level=info msg="classify block" count=1 elapse="6.271µs" height=23 module=router
+bitxhub_solo      | time="2024-06-06T07:55:53.001" level=info msg="end send block to pier" count=1 elapse="55.926µs" height=23 module=router
+bitxhub_solo      | time="2024-06-06T07:55:53.002" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+bitxhub_solo      | time="2024-06-06T07:56:00.704" level=info msg="======== Call execute, height=24" module=order
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="Generated block" count=1 height=24 module=app
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="verify proof elapsed" count=1 fields.time="74.362µs" module=executor type=serial
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="Apply transactions elapsed" count=1 fields.time="140.905µs" module=executor
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="Persisted block" count=1 elapse="156.809µs" hash=0x8495f16e24f27Fe7C770EE683Af6cAC6219aAd73D0f0205d8aF0410751a167a6 height=24 module=executor
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="Executed and Persisted block" count=1 elapse="607.708µs" height=24 module=executor
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="classify block" count=1 elapse="6.158µs" height=24 module=router
+bitxhub_solo      | time="2024-06-06T07:56:00.705" level=info msg="end send block to pier" count=1 elapse="51.553µs" height=24 module=router
+bitxhub_solo      | time="2024-06-06T07:56:00.706" level=info msg="Bxh transaction" gasUsed=210000 module=executor
+bitxhub_solo      | time="2024-06-06T07:56:01.006" level=info msg="======== Call execute, height=25" module=order
+bitxhub_solo      | time="2024-06-06T07:56:01.006" level=info msg="Generated block" count=1 height=25 module=app
+bitxhub_solo      | time="2024-06-06T07:56:01.006" level=info msg="verify proof elapsed" count=1 fields.time="109.121µs" module=executor type=serial
+bitxhub_solo      | time="2024-06-06T07:56:01.006" level=info msg="record invoke service" chainServiceID="ethappchain2:0xb00AC45963879cb9118d13120513585873f81Cdb" fromChainServiceID="ethappchain1:0xb00AC45963879cb9118d13120513585873f81Cdb" module=executor result=true
+bitxhub_solo      | time="2024-06-06T07:56:01.006" level=info msg="Apply transactions elapsed" count=1 fields.time="356.169µs" module=executor
+bitxhub_solo      | time="2024-06-06T07:56:01.006" level=info msg="Persisted block" count=1 elapse="166.9µs" hash=0x655e3A08c86fF6c1392537670E90d6f1C4fBa71dd08862D00D1e4B09E9ab20fb height=25 module=executor
+bitxhub_solo      | time="2024-06-06T07:56:01.007" level=info msg="Executed and Persisted block" count=1 elapse="893.955µs" height=25 module=executor
+bitxhub_solo      | time="2024-06-06T07:56:01.007" level=info msg="classify block" count=1 elapse="5.639µs" height=25 module=router
+bitxhub_solo      | time="2024-06-06T07:56:01.007" level=info msg="end send block to pier" count=1 elapse="64.49µs" height=25 module=router
+bitxhub_solo      | time="2024-06-06T07:56:01.008" level=info msg="Bxh transaction" gasUsed=210000 module=executor
