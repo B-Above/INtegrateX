@@ -37,10 +37,9 @@ contract Hotel is StateContract{
     function  lockState(bytes[] memory args) public override returns (bytes[] memory){
         string memory name = string(args[1]);
         uint64 num = bytesToUint64(args[2]);
-        uint64 money = bytesToUint64(args[3]);
         temp = num;
         temp_name = name;
-        lockNext(name, money);
+        lockNext(name, num);
         // bytes[] memory res = new bytes[](5);
         // res[0] = abi.encodePacked(uint64(1));
         // res[1] = abi.encodePacked(server);
@@ -87,7 +86,7 @@ contract Hotel is StateContract{
     function  receiveState(bytes[] memory args) public override{
         bytes[] memory res = new bytes[](3);
         res[0] = abi.encodePacked(uint64(0));
-        res[1] = abi.encodePacked("bank");
+        res[1] = abi.encodePacked("train");
         res[2] = args[1];
 
         roomnum = temp_states[1];

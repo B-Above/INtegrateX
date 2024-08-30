@@ -10,7 +10,7 @@ abstract contract StateContract {
     function setname(string memory a) public virtual;
 }
 
-contract Bank is StateContract{
+contract Train is StateContract{
     mapping (string => uint64) account;
     address entry;
     string temp_name;
@@ -33,15 +33,10 @@ contract Bank is StateContract{
         string memory name = string(args[1]);
         uint64 num = bytesToUint64(args[2]);
         uint64 a;
-        uint64 b;
-        (a,b) = withdraw(account[name], num);
-        if (a == 0){
-            res[2] = abi.encodePacked(uint64(1));
-            return new bytes[](0);
-        }
+        a = buy(name, num);
         res[2] = abi.encodePacked(uint64(0));
         temp_name = name;
-        temp_num = b;
+        temp_num = a;
         Entry(entry).receiveChainMode(res);
         return res;
     }
@@ -56,16 +51,17 @@ contract Bank is StateContract{
         account[name] = money;
     }
 
-    function pay (string memory name,uint64 num) public returns (uint64){
+    function buy (string memory name,uint64 num) public view returns (uint64){
+        uint64 a = account[name];
+        return a+num;
+    } 
+    function refund(string memory name, uint64 num) public returns(uint64){
         uint64 a;
         uint64 b;
-        (a,b) = withdraw(account[name],num);
+        (a,b) = check(account[name], num);
+        
         account[name] = b;
-        return a;
-    } 
-    function deposit(string memory name, uint64 num) public returns(uint64){
-        uint64 a = deposit(account[name], num);
-        account[name] = a;
+        
         return a;
     }
 
@@ -77,11 +73,8 @@ contract Bank is StateContract{
         return number;
     }
 
-       function deposit (uint64 before,uint64 num) public pure returns (uint64){
-        return num+before;
-    }
 
-    function withdraw (uint64 before,uint64 num) public pure returns (uint64,uint64){
+    function check (uint64 before,uint64 num) public pure returns (uint64,uint64){
         if (before > num){
             return (num,before-num);
         }else {

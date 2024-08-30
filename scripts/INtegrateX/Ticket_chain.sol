@@ -52,15 +52,13 @@ contract Ticket is StateContract{
     function buyTicket(string memory name, uint64 num) public returns(bool){
         temp = num;
         temp_name = name;
-        uint64 money = price*num;
         bytes[] memory args;
         bool a = false;
-        args = new bytes[](5);
+        args = new bytes[](4);
         args[0] = abi.encodePacked(uint64(0));
         args[1] = abi.encodePacked("hotel");
         args[2] = abi.encodePacked(name);
         args[3] = abi.encodePacked(num);
-        args[4] = abi.encodePacked(money);
         a = Entry(entry).lockChainMode(args);
         
         return a;
@@ -73,7 +71,7 @@ contract Ticket is StateContract{
         res[0] = abi.encodePacked(uint64(0));
         res[1] = abi.encodePacked("hotel");
         if (r == 0){
-            account[temp_name] += temp;    
+            account[temp_name] -= temp*price;    
         }
         res[2] = abi.encodePacked(uint64(0));
         Entry(entry).updateChainMode(res);

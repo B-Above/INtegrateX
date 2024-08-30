@@ -2,7 +2,7 @@
 pragma solidity >=0.5.6;
 pragma experimental ABIEncoderV2;
 
-contract Ticket{
+contract Agency{
     mapping (string => int) account;
     int price ;
     address l_bank;

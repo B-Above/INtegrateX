@@ -1,0 +1,24 @@
+ethereum-1        | WARN [05-28|13:45:15.621] Served eth_estimateGas                   conn=172.21.0.1:50220 reqid=1287 t="136.698µs"  err="too many arguments, want at most 1"
+ethereum-1        | INFO [05-28|13:45:16.667] Submitted contract creation              fullhash=0x4be6a82f46dd6f61bdb0ae4c804bf8b7ea5d34655bd42e40194fcdd005ae3387 contract=0x46c9719735709C134f565E869892C007Be01203B
+ethereum-1        | INFO [05-28|13:45:16.667] Commit new mining work                   number=23 sealhash="3d6632…547a46" uncles=0 txs=1 gas=964817  fees=9.64817e-13  elapsed="186.49µs"
+ethereum-1        | INFO [05-28|13:45:16.667] Successfully sealed new block            number=23 sealhash="3d6632…547a46" hash="706acd…f904c2" elapsed="323.619µs"
+ethereum-1        | INFO [05-28|13:45:16.667] 🔗 block reached canonical chain          number=16 hash="13cff5…2fc10e"
+ethereum-1        | INFO [05-28|13:45:16.667] 🔨 mined potential block                  number=23 hash="706acd…f904c2"
+ethereum-1        | INFO [05-28|13:45:16.668] Commit new mining work                   number=24 sealhash="b17e6c…9484e1" uncles=0 txs=0 gas=0       fees=0            elapsed="229.899µs"
+ethereum-1        | INFO [05-28|13:45:16.668] Sealing paused, waiting for transactions 
+ethereum-1        | WARN [05-28|13:45:37.283] Served eth_estimateGas                   conn=172.21.0.1:50220 reqid=1309 t="26.41µs"    err="too many arguments, want at most 1"
+ethereum-1        | INFO [05-28|13:45:38.221] Submitted contract creation              fullhash=0xa4f8f3ad536245a13c136498839899c1e7a94911530f3b46e5020a117f63256a contract=0xe7D6e871d868B2bA4d29D32b63AB750C5Eb019a1
+ethereum-1        | INFO [05-28|13:45:38.221] Commit new mining work                   number=24 sealhash="7aba80…4fce18" uncles=0 txs=1 gas=142789  fees=1.42789e-13  elapsed="168.42µs"
+ethereum-1        | INFO [05-28|13:45:38.222] Successfully sealed new block            number=24 sealhash="7aba80…4fce18" hash="f2f89e…d8855a" elapsed="366.471µs"
+ethereum-1        | INFO [05-28|13:45:38.222] 🔗 block reached canonical chain          number=17 hash="b7ad2c…cc5659"
+ethereum-1        | INFO [05-28|13:45:38.222] Commit new mining work                   number=25 sealhash="6ce8f4…342710" uncles=0 txs=0 gas=0       fees=0            elapsed="322.949µs"
+ethereum-1        | INFO [05-28|13:45:38.223] 🔨 mined potential block                  number=24 hash="f2f89e…d8855a"
+ethereum-1        | INFO [05-28|13:45:38.222] Sealing paused, waiting for transactions 
+ethereum-2        | WARN [05-28|13:46:09.361] Served eth_estimateGas                   conn=172.21.0.1:43862 reqid=741 t="27.317µs" err="too many arguments, want at most 1"
+ethereum-2        | INFO [05-28|13:46:10.281] Submitted contract creation              fullhash=0x319bbd3ac555437e38299594f8220f3de58d9b4edd0db98fc0a039ab0fa7981d contract=0xD761Ae94d319c344aA063f380732e920f7cF5658
+ethereum-2        | INFO [05-28|13:46:10.281] Commit new mining work                   number=21 sealhash="6e301f…12a5a7" uncles=0 txs=1 gas=142789  fees=1.42789e-13  elapsed="196.028µs"
+ethereum-2        | INFO [05-28|13:46:10.282] Successfully sealed new block            number=21 sealhash="6e301f…12a5a7" hash="d60f53…1b991e" elapsed="530.254µs"
+ethereum-2        | INFO [05-28|13:46:10.282] 🔗 block reached canonical chain          number=14 hash="3f130a…190571"
+ethereum-2        | INFO [05-28|13:46:10.282] 🔨 mined potential block                  number=21 hash="d60f53…1b991e"
+ethereum-2        | INFO [05-28|13:46:10.282] Commit new mining work                   number=22 sealhash="240e3c…3f74fa" uncles=0 txs=0 gas=0       fees=0            elapsed="207.513µs"
+ethereum-2        | INFO [05-28|13:46:10.282] Sealing paused, waiting for transactions 

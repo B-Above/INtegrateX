@@ -120,6 +120,8 @@ contract Entry {
 
     
 
+
+    //INtegrateX
     function lockState(bytes[] memory args) public returns (bool) {
         string memory server = string(args[1]);
         if(states[server].length == 0){
@@ -136,21 +138,13 @@ contract Entry {
         return false;
     }
 
-    // function lockSeriver(string memory destChainServiceID, string memory name1) public {
-    //     bytes[] memory args = new bytes[](3);
-    //     args[0] = abi.encodePacked(uint64(0));
-    //     args[1] = abi.encodePacked(name1);
-    //     args[2] = abi.encodePacked("ycy");
-    //     Broker(BrokerAddr).emitInterchainEvent(destChainServiceID, "GetState", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-    // }
-
-    // function GetState(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
-    //     string memory server = string(args[0]);
-    //     address ser = stateList[server];
-    //     bytes[] memory argb =  StateContract(ser).lockState(args);
-    //     states[server] = argb;
-    //     return new bytes[](0);
-    // }
+    function interchainGetState(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
+        string memory server = string(args[0]);
+        address ser = stateList[server];
+        states[server] =  StateContract(ser).lockState(args);
+        receiveSeriver(server);
+        return new bytes[](0);
+    }
 
     function receiveSeriver(string memory name1) public {
         uint256 l = states[name1].length;
@@ -163,44 +157,32 @@ contract Entry {
         Broker(BrokerAddr).emitInterchainEvent(serverID[name1], "receiveState", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
     }
 
-    // function rec(string memory name) public {
-    //     bytes[] memory args = new bytes[](5);
-    //     args[0] = abi.encodePacked(uint64(0));
-    //     args[1] = abi.encodePacked(uint64(1));
-    //     args[2] = abi.encodePacked("bank");
-    //     args[3] = abi.encodePacked("ycy");
-    //     args[4] = abi.encodePacked(uint64(1000));
-    //     Broker(BrokerAddr).emitInterchainEvent(serverID[name], "receiveState", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-    // }
-
-
     function receiveState(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
         string memory server = string(args[1]);
         states[server] = args;
+        address main = stateList[string(args[2])];
+        StateContract(main).updateState(args);
         return new bytes[](0);
     }
 
-    // function GetStateLocal(string memory name, bool isRollback)public returns(bytes[] memory){
-    //     address ser = stateList[name];
-    //     bytes[] memory args = new bytes[](2);
-    //     args[0] = abi.encodePacked(name);
-    //     args[1] = abi.encodePacked("ycy");
-    //     states[name] = StateContract(ser).lockState(args);
-        
-    //     return new bytes[](0);
-    // }
-
-    function interchainGetState(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
-        string memory server = string(args[0]);
-        address ser = stateList[server];
-        states[server] =  StateContract(ser).lockState(args);
-        receiveSeriver(server);
-        return new bytes[](0);
+    function updateState(bytes[] memory args) public {
+        string memory server = string(args[1]);
+        if(bytesToUint64(states[server][0])!= 0){
+            states[server] = args;
+            Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainUpdate", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
+        }
     }
 
     function interchainSetState(bytes[] memory args)public{
         string memory server = string(args[1]);
         states[server] = args;
+    }
+
+    function interchainUpdate(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
+        string memory server = string(args[0]);
+        address ser = stateList[server];
+        StateContract(ser).updateState(args);
+        return new bytes[](0);
     }
 
     function getState(string memory ser)public view returns (bool,bytes[] memory){
@@ -213,8 +195,6 @@ contract Entry {
         }
         return (true,states[ser]);
     }
-<<<<<<< Updated upstream
-=======
 
 
     // Multi operation
@@ -289,44 +269,24 @@ contract Entry {
     //     args[2] = abi.encodePacked("ycy");
     //     Broker(BrokerAddr).emitInterchainEvent(destChainServiceID, "GetState", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
     // }
->>>>>>> Stashed changes
 
+    // function GetState(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
+    //     string memory server = string(args[0]);
+    //     address ser = stateList[server];
+    //     bytes[] memory argb =  StateContract(ser).lockState(args);
+    //     states[server] = argb;
+    //     return new bytes[](0);
+    // }
+
+    
+
+    //other operations
     function lookState(string memory name) public view returns(uint64,string memory,string memory,uint64) {
         bytes[] memory res = states[name];
         if (res.length>0){
             return (bytesToUint64(res[0]),string(res[1]),string(res[2]),bytesToUint64(res[3])); 
         }
         return (0,"null","null",0); 
-    }
-
-    function updateState(bytes[] memory args) public {
-        string memory server = string(args[1]);
-        if(bytesToUint64(states[server][0])== 1){
-            states[server] = args;
-            Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainUpdate", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-        }
-    }
-
-    function updateAll(bytes[] memory args) public{
-        for (uint256 i = 0 ; i<args.length; i++) 
-        {
-            string memory server = string(args[i]);
-            states[server][0] = abi.encodePacked(uint64(0));
-            Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainUpdate", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-        }
-  
-    }
-
-    function update(string memory server) public{    
-        states[server][0] = abi.encodePacked(uint64(0));
-        Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainUpdate", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-    }
-
-    function interchainUpdate(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
-        string memory server = string(args[0]);
-        address ser = stateList[server];
-        StateContract(ser).updateState(args);
-        return new bytes[](0);
     }
 
     function bytesToUint64(bytes memory b) public pure returns (uint64){
@@ -336,28 +296,44 @@ contract Entry {
         }
         return number;
     }
+    
 
-    // function setBankstate(uint64 state,string memory ser, string memory name,uint64 num )public{
-    //     bytes[] memory args = new bytes[](4);
-    //     args[0] = abi.encodePacked(state);
-    //     args[1] = abi.encodePacked(ser); 
-    //     args[2] = abi.encodePacked(name);
-    //     args[3] = abi.encodePacked(num); 
-    //     states["bank"] = args;
+    // function updateAll(bytes[] memory args) public{
+    //     for (uint256 i = 0 ; i<args.length; i++) 
+    //     {
+    //         string memory server = string(args[i]);
+    //         states[server][0] = abi.encodePacked(uint64(0));
+    //         Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainUpdate", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
+    //     }
+  
     // }
+
+    // function update(string memory server) public{    
+    //     states[server][0] = abi.encodePacked(uint64(0));
+    //     Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainUpdate", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
+    // }
+
     
     // ChainMode
     function lockChainMode(bytes[] memory args) public returns (bool) {
         string memory server = string(args[1]);
         //Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainGetState", args, "interchainSetState", new bytes[](0), "", new bytes[](0), false, new string[](0));
-        Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainGetState", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
+        Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainModeGet", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
         return true;
     }
 
     function updateChainMode(bytes[] memory args) public returns (bool) {
-        string memory server = string(args[1]);
+        string memory server;
+        bytes[] memory args1 = new bytes[](2);
+        args1[0] = abi.encodePacked(uint64(0));
+        uint l = args.length;
+        for (uint i = 0; i<l; i++) 
+        {
+            server = string(args[i]);
+            args1[1] = args[i];
+            Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainModeUp", args1, "", new bytes[](0), "", new bytes[](0), false, new string[](0)); 
+        }
         //Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainGetState", args, "interchainSetState", new bytes[](0), "", new bytes[](0), false, new string[](0));
-        Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainModeUp", args, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
         return true;
     }
 
@@ -375,85 +351,15 @@ contract Entry {
         return new bytes[](0);
     }
 
+    function interchainModeGet(bytes[] memory args, bool isRoolback)public returns(bytes[] memory){
+        string memory server = string(args[0]);
+        address ser = stateList[server];
+        states[server] =  StateContract(ser).lockState(args);
+        return new bytes[](0);
+    }
+
     // Multi operation
-<<<<<<< Updated upstream
-    function interchainLockMulti(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
-        uint64 l = bytesToUint64(args[0]);
-        string memory asker = string(args[1]);
-        bytes[][] memory argb = new bytes [][](l);
-        bytes[] memory targs = new bytes[](2);
-        targs[0] = args[0];
-        targs[1] = args[l+2];
-        uint64 c = 0;
-        for (uint256 i=0; i<l; i++) 
-        {
-            string memory server = string(args[i+2]);
-            address ser = stateList[server];
-            argb[i] = StateContract(ser).lockState(targs);
-            c = c + bytesToUint64(argb[i][0]);
-        }
-        bytes[] memory res = new bytes[](c+1);
-        res[0] = abi.encodePacked(uint64(0));
-        uint index = 1;
-        for (uint256 i=0; i<l; i++) 
-        {
-            uint64 k = bytesToUint64(argb[i][0]);
-            for (uint256 j=0; j<k; j++) 
-            {
-                res[index] = argb[i][j];
-                index += 1;
-            }
-        }
-        states[asker] = res;
-        Broker(BrokerAddr).emitInterchainEvent(serverID[asker], "interchainReceiveMulti", res, "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-        return new bytes[](0);
-    }
-
-    function test(string memory server)public {
-        Broker(BrokerAddr).emitInterchainEvent(serverID[server], "interchainReceiveMulti", states[server], "", new bytes[](0), "", new bytes[](0), false, new string[](0));
-    }
     
-    function interchainReceiveMulti(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
-        uint l = args.length;
-        for (uint i = 0; i<l; i++) 
-        {
-            uint64 r = bytesToUint64(args[i]);
-            bytes[] memory temp =new bytes[](r);
-            temp[0] = args[i];
-            for (uint j = 1; j<r; j++) 
-            {
-                temp[j] = args[i+j];
-            }
-            string memory ser = string(temp[1]);
-            states[ser] = temp;
-            i = i+r-1;
-        }
-        return new bytes[](0);
-    }
-
-    function interchainUpdateMulti(bytes[] memory args, bool isRollback)public returns(bytes[] memory){
-        uint l = args.length;
-        for (uint i = 0; i<l; i++) 
-        {
-            uint64 r = bytesToUint64(args[i]);
-            bytes[] memory temp =new bytes[](r);
-            temp[0] = args[i];
-            for (uint j = 1; j<r; j++) 
-            {
-                temp[j] = args[i+j];
-            }
-            string memory server = string(temp[1]);
-
-            address ser = stateList[server];
-            StateContract(ser).updateState(temp);
-            i = i+r-1;
-        }
-        return new bytes[](0);
-    }
-
-=======
-    
->>>>>>> Stashed changes
 
 
 }

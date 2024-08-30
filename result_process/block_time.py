@@ -81,6 +81,29 @@ def calculate_time_difference(filepath,blocknum):
     time_difference = last_time - first_time
     return time_difference
 
+def first_bc_time(filepath):
+    first_time = None
+    last_time = None
+    
+    with open(filepath, 'r') as file:
+        for line in file:
+            
+            time = parse_time_from_log(line)
+           
+            if time is not None:
+                if first_time is None:
+                    first_time = time
+                if 'Successfully sealed new block' in line:
+                    last_time = time  # 每次循环更新，循环结束时，将是最后一行
+                    time_difference = last_time - first_time
+                    return time_difference
+    if not first_time or not last_time:
+        return "File is empty, does not contain valid timestamps, or there is an error reading the file"
+    
+    # 计算时间差
+    time_difference = last_time - first_time
+    return time_difference
+
 def decide_which(s):
     if 'ethereum-1' in s:
         return 0
@@ -108,7 +131,7 @@ def calculate_onchain(ethline):
         res[s] += dt.total_seconds()*1e6
     res[3] = res[0]+res[1]+res[2]
     return res
-
+print('INtegratex')
 # 使用函数
 # file_path = ['1.txt','2.txt','3cChain.txt']
 file_path = ['1.txt','2.txt','3cChain.txt']
@@ -121,18 +144,19 @@ file_path = ['./3/3l1.txt','./3/3e1.txt','./3/3l2.txt','./3/3e2.txt','./3/3l3.tx
 # 3i
 file_path = ['./new/3i0','./new/3i1','./new/3i2','./new/3i3','./new/3i4']
 endnum = [387,422,453,484,438]
-file_path = ['./new/4i0','./new/4i1','./new/4i2','./new/4i3','./new/4i4']
-endnum = [209,232,255,276,292]
-file_path = ['./new/5i0','./new/5i1','./new/5i2','./new/5i3','./new/5i4']
-endnum = [448,460,495,513,533]
+# file_path = ['./new/4i0','./new/4i1','./new/4i2','./new/4i3','./new/4i4']
+# endnum = [209,232,255,276,292]
+# file_path = ['./new/5i0','./new/5i1','./new/5i2','./new/5i3','./new/5i4']
+# endnum = [448,460,495,513,533]
 # 3c
 # file_path = ['./new/3c0','./new/3c1','./new/3c2','./new/3c3','./new/3c4']
 # endnum = [122,181,217,248,274]
 times = []
+first_times = []
 k = []    
 rest = []
 for i in range(len(file_path)):
-    print(file_path[i])
+    #print(file_path[i])
 
     # k = read_file_and_find_gas(i,'INFO')
     # res = calculate_onchain(k)
@@ -142,22 +166,38 @@ for i in range(len(file_path)):
     # print(res)
     # rest.append(res)
     times.append(calculate_time_difference(file_path[i],endnum[i]).total_seconds())
-    print(times[i])
+    first_times.append(first_bc_time(file_path[i]).total_seconds())
+    #print(times[i])
+print(times)
+print(first_times)
 average = np.array(times).mean()
+av = np.array(first_times).mean()
+t = np.array(times)-np.array(first_times)-30
+print(av)
 print(average)
+
+print('GPACT')
 
 # 3c
 file_path = ['./new/3c0','./new/3c1','./new/3c2','./new/3c3','./new/3c4']
 endnum = [122,181,217,248,274]
-file_path = ['./new/4c0','./new/4c1','./new/4c2','./new/4c3','./new/4c4']
-endnum = [808,835,871,903,928]
-file_path = ['./new/5c0','./new/5c2','./new/5c3','./new/5c4']
-endnum = [106,762,795,827]
+
+endnum=[133,167,200,245,280]
+file_path = ['./new/3t3','./new/3t4','./new/3t5','./new/3t6','./new/3t7']
+endnum=[325,344,366,410,435]
+file_path = ['./new/4t0','./new/4t1','./new/4t2','./new/4t3','./new/4t4']
+endnum=[257,309,344,390,422]
+file_path = ['./new/5t0','./new/5t1','./new/5t2','./new/5t3','./new/5t4']
+# file_path = ['./new/4c0','./new/4c1','./new/4c2','./new/4c3','./new/4c4']
+# endnum = [808,835,871,903,928]
+# file_path = ['./new/5c0','./new/5c2','./new/5c3','./new/5c4']
+# endnum = [106,762,795,827]
 times = []
+first_times = []
 k = []    
 rest = []
 for i in range(len(file_path)):
-    print(file_path[i])
+    #print(file_path[i])
 
     # k = read_file_and_find_gas(i,'INFO')
     # res = calculate_onchain(k)
@@ -167,7 +207,12 @@ for i in range(len(file_path)):
     # print(res)
     # rest.append(res)
     times.append(calculate_time_difference(file_path[i],endnum[i]).total_seconds())
-    print(times[i])
+    first_times.append(first_bc_time(file_path[i]).total_seconds())
+    #print(times[i])
+print(times)
+print(first_times)
 average = np.array(times).mean()
+av = np.array(first_times).mean()
+print(av)
 print(average)
 
