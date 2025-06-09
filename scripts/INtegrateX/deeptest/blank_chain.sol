@@ -20,6 +20,13 @@ contract blank is StateContract{
         _entry = a;
     }
 
+    function setup(string memory a,string memory nname, string memory bname, address entry) public{
+        server = a;
+        nextname = nname;
+        before = bname;
+        _entry = entry;
+    }
+
     function setname(string memory a) public override {
         server = a;
     }

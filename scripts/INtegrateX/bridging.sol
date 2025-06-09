@@ -1,7 +1,7 @@
 pragma solidity >=0.5.6;
 pragma experimental ABIEncoderV2;
 
-contract Entry {
+contract bridging {
     mapping(string => string) dataM; // map for accounts
     mapping(string => string) serverID;
     mapping(string => address) serverList;
