@@ -1,49 +1,38 @@
-# Go Duck
-Goduck is a command-line management tool that can help to run BitXHub.
-## Quick Start
-### Installation
-```shell script
-git clone git@github.com:meshplus/goduck
-cd goduck
-sudo make install
-```
-### Initialization
-```shell script
-goduck init
-```
-### Start BitXHub
-```shell script
-goduck bitxhub start
-```
-The command will initialize and start BitXHub nodes in solo mode.
-### Start Pier
-```shell script
-goduck pier start
-```
-The command will start pier and its ethereum appchain.   
-You can also start its fabric appchain by carrying parameter `--chain fabric`.
-## Usage
-```shell script
-goduck [global options] command [command options] [arguments...]
-```
-#### command
-- `deploy`         Deploy BitXHub and pier
-- `version`         Components version  
-- `init`          Init config home for GoDuck
-- `status`          Check status of interchain system  
-- `ether`       Operation about ethereum chain
-- `key`          Create and show key information
-- `bitxhub`          Start or stop BitXHub nodes
-- `pier`          Operation about pier  
-- `playground`          Set up and experience interchain system smoothly
-- `info`          Show basic info about interchain system
-- `prometheus`          Start or stop prometheus
-- `help, h`          Shows a list of commands or help for one command
+# IntegrateX
 
-#### global options
-- `--repo value`          Goduck storage repo path
-- `--help, -h`
+**IntegrateX** , an efficient cross-chain interoperability system that ensures the overall atomicity of cross-chain smart contract invocations. 
 
-See 
-[usage documentation](https://github.com/meshplus/goduck/wiki/%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7goduck%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3)
- in the wiki.
+ 
+
+## Deployment
+
+This project use Bitxhub to implement the relayer in cross chain communication.
+
+Use [usage documentation](https://github.com/meshplus/goduck/wiki/%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7goduck%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3) to quick run BitXHub.
+
+
+
+### Quick start
+
+```shell
+goduck playground start
+```
+
+
+
+## 📁 Project Structure
+
+```
+.
+├── IntegrateX/                # Main implementation of the cross-chain framework
+│   ├── Bridging/              # Bridging contracts for cross-chain message verification and dispatch
+│   ├── Deeptest/              # Deep testing modules 
+│   ├── FGL/                   # Fine-grained locking mechanism example
+│   ├── Train-Hotel/           # Cross-chain application example: hotel and train booking coordination
+│   └── ethereum_client/       # Scripts or tools to run local Ethereum-compatible chains
+├── Script/  				   # Scripts for dockers,quick start and config  
+├── Contract setting.md        # Contract setting for each contract  
+```
+
+
+
