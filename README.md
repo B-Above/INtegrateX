@@ -30,7 +30,8 @@ goduck playground start
 │   ├── FGL/                   # Fine-grained locking mechanism example
 │   ├── Train-Hotel/           # Cross-chain application example: hotel and train booking coordination
 │   └── ethereum_client/       # Scripts or tools to run local Ethereum-compatible chains
-├── Script/  				   # Scripts for dockers,quick start and config  
+├── Script/                    # Scripts for dockers and quick start  
+├── Config/                    # Config for underlying blockchain 
 ├── Contract setting.md        # Contract setting for each contract  
 ```
 
